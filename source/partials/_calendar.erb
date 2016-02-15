@@ -1,0 +1,37 @@
+<div class="row">
+<% data.calendar.rooms.each do |room, room_name| %>
+  <div class="col-xs-<%= 12 / data.calendar.rooms.length %>">
+    <% sessions = data.calendar.tracks[room] %>
+    <h3><%= room %> <small><%= room_name %></small></h3>
+    <% sessions.each do |track| %>
+    <% time = data.calendar.times[sessions.index track] %>
+    <article class="panel">
+      <% if track.type == "talk" %>
+        <h4><%= track.speaker || "Awesome Speaker" %></h4>
+        <% if time %>
+          <time><%= time.start %> - <%= time.end %></time>
+        <% end %>
+        <h5><%= track.talk || "TBA" %></h5>
+        <p>
+        <% if track.abstract %>
+          <%= markdown track.abstract %>
+        <% else %>
+          To be announced.
+        <% end %>
+        </p>
+      <% elsif track.type == "break" %>
+        <h4>
+          <% if track.icon %>
+            <i class="fa fa-<%= track.icon %>"></i>
+          <% end %>
+          <%= track.description || "Break" %>
+        </h4>
+        <% if time %>
+          <time><%= time.start %> - <%= time.end %></time>
+        <% end %>
+      <% end %>
+    </article>
+    <% end %>
+  </div>
+<% end %>
+</div>

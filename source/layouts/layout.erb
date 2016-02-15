@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <% data.global.meta and data.global.meta.each do |name, content| %>
+      <%= tag :meta, :name => name, :content => content %>
+    <% end %>
+
+    <title><%= current_page.data.title || data.global.title || "Vimfest 2016" %></title>
+
+    <% current_page.data.styles.each do |style| %>
+    <%= stylesheet_link_tag style %>
+    <% end %>
+    <%= stylesheet_link_tag "main" %>
+  </head>
+
+  <body class="<%= page_classes %>" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <%= yield %>
+    <!-- <img style="display: block; text&#45;align: center; margin&#45;left: auto; margin&#45;right: auto;" src="https://farm2.staticflickr.com/1599/25023743776_ebeea0a60f_z_d.jpg" alt="People from first Vimfest in Berlin"> -->
+
+    <% current_page.data.scripts.each do |script| %>
+    <%= javascript_include_tag script %>
+    <% end %>
+    <%= javascript_include_tag  "main" %>
+  </body>
+</html>

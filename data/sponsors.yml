@@ -1,0 +1,13 @@
+gold:
+  - name: webBox
+    logo: webbox.png
+
+silver: false
+bronze: false
+open: false
+
+supporters:
+  - name: jstanbul
+    logo: jstanbul.png
+  - name: devpod
+    logo: devpod.png

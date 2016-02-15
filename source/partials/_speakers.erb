@@ -1,0 +1,10 @@
+<% data.speakers.each do |speaker| %>
+  <div>
+  <%= markdown speaker.name %>
+  <%= markdown speaker.work.company %>
+  <%= markdown speaker.work.title %>
+  <%= markdown speaker.bio %>
+  <%= markdown speaker.social.twitter %>
+  <%= markdown speaker.social.github %>
+  </div>
+<% end %>

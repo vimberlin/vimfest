@@ -1,0 +1,12 @@
+body {
+  .bio strong {
+    @include linear-gradient(to top, red, orange);
+    @include border-radius(5px);
+    padding: 10px;
+    display: inline-block;
+  }
+}
+
+.navbar-placeholder {
+  height: 50px;
+}

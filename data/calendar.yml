@@ -1,0 +1,58 @@
+times:
+  - start: "08:00"
+    end: "09:00"
+
+  - start: "09:00"
+    end: "09:40"
+
+  - start: "09:00"
+    end: "10:40"
+
+  - start: "12:00"
+    end: "13:30"
+
+rooms:
+  "Day 1": Main Room
+  "Day 2": Sir Alexender
+  "Day 3": Lala lolo
+
+tracks:
+  "Day 1":
+    - type: break
+      description: Registration
+      icon: barcode
+
+    - type: talk
+      speaker: Speaker 1
+      talk: hello world
+      abstract: some strange things that you
+                **asd**
+
+    - type: talk
+      speaker: Speaker 2
+      talk: responsive web
+      abstract: oo cool things.
+
+    - type: break
+      description: Lunch
+      icon: cutlery
+
+  "Day 2":
+    - type: break
+      description: Registration
+      icon: barcode
+
+    - type: talk
+      speaker: Speaker 3
+      talk: Mobile Apps
+      abstract: everything is an app
+
+    - type: talk
+      speaker: null
+      talk: null
+      abstract: null
+
+  "Day 3":
+    - type: break
+      description: Registration
+      icon: barcode
