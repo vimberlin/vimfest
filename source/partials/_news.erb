@@ -1,5 +1,9 @@
-<% data.news.each do |news| %>
-
-<h3><%= markdown news.title %></h3>
-<p><%= markdown news.tagline %></p>
-<% end %>
+<ul>
+  <% data.news.each do |news| %>
+    <li>
+      <h3><%= markdown news.title %></h3>
+      <p><%= markdown news.date %></p>
+      <p><%= markdown news.tagline %></p>
+    </li>
+  <% end %>
+</ul>
