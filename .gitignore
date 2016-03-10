@@ -7,3 +7,4 @@ dummy.*
 credentials.rb
 .idea/
 bin/
+.mucksrc
