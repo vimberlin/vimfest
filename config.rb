@@ -9,7 +9,6 @@ set :css_dir, 'public/css'
 set :js_dir, 'public/js'
 set :images_dir, 'public/images'
 
-
 helpers do
   def markdown(data)
     Tilt['md'].new { data }.render
@@ -21,6 +20,5 @@ activate :livereload
 
 configure :build do
   activate :minify_css
-  activate :minify_javascript
 end
 
