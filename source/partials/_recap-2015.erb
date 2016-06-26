@@ -1,0 +1,293 @@
+<h2>SvenG</h2>
+
+<p><a href="http://www.guckes.net/">@guckes</a></p>
+
+<ul>
+  <li><a href="http://www.guckes.net/Setup/i3-config">i3 window manager</a></li>
+  <li><a href="http://www.truth.sk/vim/vimbook-OPL.pdf">vim book from steve oualline</a></li>
+  <li><a href="http://leanpub.com/pdfkungfoo">buch von kurt pfeifle über PDFs</a></li>
+  <li><a href="https://www.alchemistowl.org/pocorgtfo/">polyglot PDF+WAV</a></li>
+  <li><a href="http://www.guckes.net/vim/setup.html">Sven&#39;s Minimal Vim Config</a></li>
+  <li><a href="http://www.guckes.net/Setup/vimtags.txt">Starter File für Tags</a></li>
+  <li><a href="http://www.guckes.net/agrep">notes/signatures with agrep</a></li>
+  <li><a href="http://www.guckes.net/Setup/muttrc.workshop.de.txt">mutt workshop setup file</a></li>
+</ul>
+
+<h2>Tim Quellmalz:</h2>
+
+<p><a href="https://github.com/tqmz">@tqmz</a></p>
+
+<h3>Tab &amp; Trailing Whitespace</h3>
+<div class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="c">&quot; shortcuts for replacing tabs / removing trailing whitespace</span>
+nmap <span class="p">&lt;</span><span class="k">silent</span><span class="p">&gt;</span> <span class="p">&lt;</span>LocalLeader<span class="p">&gt;</span>ct :%<span class="k">s</span><span class="sr">/\t/</span>    <span class="sr">/g&lt;CR&gt;:%s/</span>\<span class="k">s</span>\<span class="p">+</span>$<span class="sr">//</span><span class="k">g</span><span class="p">&lt;</span>CR<span class="p">&gt;</span>
+nmap <span class="p">&lt;</span><span class="k">silent</span><span class="p">&gt;</span> <span class="p">&lt;</span>LocalLeader<span class="p">&gt;</span><span class="k">cs</span> :%<span class="k">s</span><span class="sr">/\s\+$/</span>/<span class="k">g</span><span class="p">&lt;</span>CR<span class="p">&gt;</span>
+
+<span class="c">&quot; alternative</span>
+<span class="p">:</span>help <span class="k">retab</span>
+</code></pre></div>
+<h3>Firefox</h3>
+
+<p>start multiple profiles (instances) at the same time (open profiles of current topics only):</p>
+
+<ul>
+  <li><code>firefox -no-remote -P %u</code></li>
+  <li><p><code>iceweasel -no-remote -P %u</code></p></li>
+  <li><p><a href="https://addons.mozilla.org/De/firefox/addon/firetitle/">FireTitle</a>: to name windows (use Ctrl-; to name session)</p></li>
+  <li><p><a href="https://support.mozilla.org/en-US/kb/tab-groups-organize-tabs">Tab-Groups</a> + <a href="https://addons.mozilla.org/de/firefox/addon/tabgroups-menu/">TabGroup Menu</a>: Enable it inside preferences and drop it in the address line</p></li>
+  <li><p><a href="https://addons.mozilla.org/de/firefox/addon/tile-tabs/">Tile Tabs</a>: Split Tab on one screen</p></li>
+  <li><p><a href="https://addons.mozilla.org/en-US/firefox/addon/restclient/">Restclient</a>: Restclient</p></li>
+  <li><p><a href="https://addons.mozilla.org/en-US/firefox/addon/rss-feed-icon-in-navbar">RSS Icon</a>: rss icon the urlbar</p></li>
+</ul>
+
+<h3>Jabber</h3>
+
+<ul>
+  <li><a href="http://prosody.im">prosody is a good Jabber-Server</a></li>
+</ul>
+
+<h3>Chrome</h3>
+
+<ul>
+  <li><a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop">PostMan</a>: Restclient</li>
+</ul>
+
+<h3>Zsh</h3>
+
+<ul>
+  <li><a href="https://www.reddit.com/r/zsh/comments/2zpfns/zsh_508_will_have_vimlike_textobjects_in_vi_mode/">zsh 5.0.8 ... vim-like textobjects in vi mode</a></li>
+  <li><a href="https://github.com/hchbaw/opp.zsh">opp.zsh</a></li>
+  <li><a href="http://dougblack.io/words/zsh-vi-mode.html">Adding Vi To Your Zsh</a></li>
+</ul>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">bindkey -v
+</code></pre></div>
+<ul>
+  <li><a href="https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/pj/pj.plugin.zsh">oh-my-zsh plugin pj</a>: pass a blog, quickly find folders</li>
+</ul>
+
+<h3>Blogging</h3>
+
+<ul>
+  <li>static site generators, like <a href="https://jekyllrb.com/" title="jekyll">jekyll</a></li>
+  <li>flat filebased cms, like <a href="http://getkirby.com/">KirbyCMS</a></li>
+</ul>
+
+<h3>Markdown</h3>
+
+<ul>
+  <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown-Cheatsheet</a></li>
+</ul>
+
+<h3>Vim Sessions</h3>
+
+<p>project-wise sessions
+path/to/project/.vimrc:</p>
+<div class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="c">&quot; restore actions (tab selection, window resizing etc.)</span>
+source .vimsession
+<span class="c">&quot; restore buffers ... and history of commands, searches, buffers etc.</span>
+exec <span class="s2">&quot;set viminfo=%,&#39;50,&lt;1000,s100,:50,@10,/50,n&quot;</span> . <span class="k">g</span>:proj_path . <span class="s2">&quot;.viminfo&quot;</span>
+<span class="c">&quot; map F10 to save &amp; exit</span>
+exec   <span class="s2">&quot;nmap &lt;silent&gt; &lt;F10&gt; :mksession! &quot;</span> . <span class="k">g</span>:proj_path .   <span class="s2">&quot;.vimsession&lt;CR&gt;:wviminfo! &quot;</span> . <span class="k">g</span>:proj_path .   <span class="s2">&quot;.viminfo&lt;CR&gt;:qa!&lt;CR&gt;&quot;</span>
+</code></pre></div>
+<h3>Vim Colors</h3>
+<div class="highlight"><pre><code class="language-vim" data-lang="vim">Cursor <span class="s2">&quot;Fadenkreuz&quot;</span>
+<span class="k">set</span> <span class="nb">cursorcolumn</span>                       <span class="c">&quot; highlight the current column – disturbs autocompletetion background!</span>
+<span class="k">set</span> <span class="nb">cursorline</span>                         <span class="c">&quot; highlight current line</span>
+</code></pre></div>
+<h3>BufExplorer</h3>
+
+<ul>
+  <li><a href="https://github.com/jlanzarotta/bufexplorer">BufExplorer</a>: Plugin for Buffers</li>
+</ul>
+
+<h3>Xmodmap</h3>
+
+<p>~/.Xmodmap:</p>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">! map Capslock as additional Ctrl key
+clear   Lock
+clear   Control
+keycode <span class="nv">66</span> <span class="o">=</span> Control_L
+add     <span class="nv">Control</span> <span class="o">=</span> Control_L Control_R
+</code></pre></div>
+<ul>
+  <li><code>xmodmap ~/.Xmodmap</code></li>
+  <li><code>xmodmap -pke</code> for a list of all current</li>
+  <li>map [ and ] to other keys on German keyboard (?)</li>
+</ul>
+
+<h3>Tags</h3>
+
+<ul>
+  <li>use multiple tag files:</li>
+</ul>
+<div class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="k">set</span> <span class="k">tags</span><span class="p">=</span>.<span class="sr">/tags;/</span><span class="p">,</span><span class="k">tags</span>;/
+</code></pre></div>
+<h3>Nerdtree</h3>
+<div class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="c">&quot; Map NERDTreeToggle to convenient key</span>
+nmap <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">n</span> :NERDTreeToggle<span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span>
+
+<span class="c">&quot; Set local mapleader</span>
+<span class="k">let</span> mapleader <span class="p">=</span> <span class="s2">&quot;_&quot;</span>
+
+<span class="c">&quot; a nice shortcut for ppl with french keyboard layout who don&#39;t write french</span>
+<span class="c">&quot; often; use `r` (replace) to type it nonetheless</span>
+map<span class="p">!</span> ç <span class="p">&lt;</span>Esc<span class="p">&gt;</span>
+</code></pre></div>
+<h3>pandoc</h3>
+
+<p>pandoc</p>
+<div class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="p">:</span><span class="k">autocmd</span> <span class="nb">FileType</span> pdc <span class="nb">noremap</span> <span class="p">&lt;</span>C<span class="p">-</span>M<span class="p">&gt;</span> :<span class="k">w</span><span class="p">!&lt;</span>CR<span class="p">&gt;</span>:<span class="p">!</span>pandoc <span class="p">-</span><span class="k">s</span> <span class="p">-</span><span class="k">f</span> markdown <span class="p">-</span><span class="k">t</span> latex % <span class="p">-</span><span class="k">o</span> %.pdf<span class="p">&lt;</span>CR<span class="p">&gt;</span>
+</code></pre></div>
+<h2>Daniel Hahler</h2>
+
+<p><a href="http://daniel.hahler.de">@blueyed</a></p>
+
+<ul>
+  <li>Use &quot;Space&quot; as leader (not for imap!):</li>
+</ul>
+<div class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="k">let</span> mapleader <span class="p">=</span> <span class="s2">&quot;,&quot;</span>
+nmap <span class="p">&lt;</span>space<span class="p">&gt;</span> <span class="p">&lt;</span>Leader<span class="p">&gt;</span>
+vmap <span class="p">&lt;</span>space<span class="p">&gt;</span> <span class="p">&lt;</span>Leader<span class="p">&gt;</span>
+</code></pre></div>
+<ul>
+  <li><a href="https://github.com/xolox/vim-session">Vim session management</a></li>
+  <li><a href="https://github.com/DaveDavenport/rofi">Rofi</a>: A window switcher, run dialog and dmenu replacement</li>
+  <li><a href="https://github.com/tpope/vim-sensible/blob/master/plugin/sensible.vim">vim-sensible</a></li>
+  <li><a href="https://github.com/mtth/cursorcross.vim">cursorcross</a></li>
+  <li><a href="https://github.com/Tarrasch/zsh-autoenv">zsh-autoenv</a>: project-based settings for your shell</li>
+  <li><a href="https://github.com/tpope/vim-projectionist">https://github.com/tpope/vim-projectionist</a></li>
+  <li><a href="https://github.com/blueyed/vim-diminactive">vim-diminactive</a>: dim inactive windows, w/ vader tests (tmux based)</li>
+  <li><a href="https://github.com/shuber/vim-promiscuous">shuber/vim-promiscuous</a>: #context #switch #branches</li>
+  <li><a href="https://github.com/embear/vim-localvimrc">embear/vim-localvimrc</a>: #vimrc #base</li>
+  <li><a href="https://github.com/tpope/vim-abolish">tpop/vim-abolish</a>: #renaming #casevariants
+
+    <ul>
+      <li>Tim: see also <a href="https://github.com/jlevy/repren">repren</a></li>
+    </ul></li>
+    <li><a href="https://github.com/Shougo/unite.vim">Shougo/unite.vim</a>: Unite and create user interfaces #launcher</li>
+</ul>
+
+<h2>Max</h2>
+
+<ul>
+  <li>yankstack: <a href="https://github.com/maxbrunsfeld/vim-yankstack">https://github.com/maxbrunsfeld/vim-yankstack</a></li>
+  <li>See <a href="https://github.com/maxbrunsfeld/vim-yankstack#compatibility">https://github.com/maxbrunsfeld/vim-yankstack#compatibility</a> if you also use vim-sneak.</li>
+  <li>Peek into register contents, e.g. from <code>&lt;C-r&gt;</code> in insert mode: <a href="https://github.com/junegunn/vim-peekaboo">https://github.com/junegunn/vim-peekaboo</a></li>
+</ul>
+
+<h3>Copy &amp; Paste</h3>
+
+<ul>
+  <li><code>&quot;+y</code> into register clipboard/ctrl+v (+), yank (copy)</li>
+  <li><code>&quot;+p</code> from register clipboard, paste</li>
+  <li><code>&quot;*y</code> into register mouse middle click, yank</li>
+  <li><code>&quot;*p</code> paste ...</li>
+</ul>
+<div class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="k">set</span> <span class="nb">clipboard</span><span class="p">=</span>unnamed
+<span class="k">set</span> <span class="nb">clipboard</span><span class="p">=</span>unnamedplus
+vmap <span class="p">&lt;</span><span class="k">c</span><span class="p">-</span><span class="k">c</span><span class="p">&gt;</span> &quot;*<span class="k">y</span>
+</code></pre></div>
+<h3>Auto Complete (u.a. Ruby)</h3>
+
+<ul>
+  <li><code>^n (ctrl+n)</code> -&gt; <code>:h CTRL-N</code></li>
+  <li>ctags <a href="http://ctags.sourceforge.net/">http://ctags.sourceforge.net/</a></li>
+</ul>
+
+<h2>Matthias Günther</h2>
+
+<p><a href="http://wikimatze.de/about">@wikimatze</a></p>
+
+<h3>Syntaxdetection</h3>
+
+<ul>
+  <li><a href="https://github.com/sheerun/vim-polyglot">vim-polyglot</a> Loading language packs on demand - saves a lot of startup time.</li>
+</ul>
+
+<h3>Read the output of a Ex command and paste the output in the current</h3>
+
+<p><code>:r!</code> (e.g. <code>:r! ls</code>)</p>
+
+<h3>Nice operating system</h3>
+
+<ul>
+  <li><a href="http://www.voidlinux.eu/">http://www.voidlinux.eu/</a></li>
+</ul>
+
+<h3>Startuptime</h3>
+
+<p><vim --startuptime /tmp/startup></p>
+
+<h2>Browser</h2>
+
+<ul>
+  <li>Firefox: <a href="https://github.com/akhodakivskiy/VimFx">VimFx</a></li>
+  <li>Chromium: <a href="http://vimium.github.io/">Vimium</a></li>
+</ul>
+
+<h3>wemux</h3>
+
+<p><a href="http://martinbrochhaus.com/pair.html">http://martinbrochhaus.com/pair.html</a></p>
+
+<h3>Vim backups</h3>
+<div class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="k">if</span> <span class="p">!</span>isdirectory<span class="p">(</span>$HOME . <span class="s1">&#39;/.vim/backup&#39;</span><span class="p">)</span>
+  <span class="k">call</span> <span class="k">mkdir</span><span class="p">(</span>$HOME . <span class="s1">&#39;/.vim/backup&#39;</span><span class="p">)</span>
+<span class="k">endif</span>
+
+<span class="k">set</span> <span class="nb">backupext</span><span class="p">=~</span>                 <span class="c">&quot; backup file extension</span>
+<span class="k">set</span> <span class="nb">backupdir</span><span class="p">=</span>$HOME<span class="sr">/.vim/</span><span class="nb">backup</span> <span class="c">&quot; directory of backups</span>
+<span class="k">set</span> <span class="nb">backupcopy</span><span class="p">=</span>yes              <span class="c">&quot; keep attributes of the original file</span>
+<span class="k">set</span> <span class="nb">backup</span>                      <span class="c">&quot; save files after close</span>
+<span class="k">set</span> <span class="nb">writebackup</span>                 <span class="c">&quot; make a backup of the original file when writing</span>
+</code></pre></div>
+<h3>i3 beautification and setup</h3>
+
+<ul>
+  <li><a href="http://blog.tunnelshade.in/2014/05/making-i3-beautiful.html">http://blog.tunnelshade.in/2014/05/making-i3-beautiful.html</a></li>
+  <li><a href="https://tribaal.io/using-i3.html">https://tribaal.io/using-i3.html</a></li>
+  <li><a href="http://askubuntu.com/questions/598943/how-to-de-uglify-i3-wm">http://askubuntu.com/questions/598943/how-to-de-uglify-i3-wm</a></li>
+</ul>
+
+<h2>Richard</h2>
+
+<ul>
+  <li><a href="https://github.com/edkolev/tmuxline.vim">adjust tmux status line</a></li>
+  <li><a href="https://github.com/christoomey/vim-tmux-navigator">tmux-vim-navigator</a></li>
+  <li><a href="https://github.com/NickLaMuro/vimux">vimux</a></li>
+  <li><a href="https://github.com/jpalardy/vim-slime">slime</a></li>
+  <li><a href="https://github.com/tmuxinator/tmuxinator">configure tmux-sessions with tmuxinator</a></li>
+  <li><a href="https://github.com/oracle2025/.vim">Richard&#39;s vimrc</a></li>
+  <li><a href="https://github.com/junegunn/goyo.vim">Goyo</a>:  WriteRoom, Distraction-free Writing</li>
+  <li>shortcut for toggling status bar for tmux: <code>bind h set-option -g status</code></li>
+  <li><code>pandoc make</code> under OSX, PDF-Reader: <a href="http://skim-app.sourceforge.net/">Skim</a>)</li>
+  <li><a href="http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/">Space as mapleader</a></li>
+  <li><a href="https://github.com/jonas/tig">git client tig</a></li>
+</ul>
+
+<h2>Other things</h2>
+
+<h3>Desktop-Manager</h3>
+
+<ul>
+  <li><a href="http://www.herbstluftwm.org/">herbstluftwm</a></li>
+  <li><a href="http://awesomewm.org/">awesomeWM</a>
+
+    <ul>
+      <li><a href="https://github.com/awesomeWM/awesome">https://github.com/awesomeWM/awesome</a></li>
+    </ul></li>
+    <li><a href="https://i3wm.org/">i3 window manager</a>
+
+      <ul>
+        <li><a href="http://www.guckes.net/Setup/i3-config.2015-10-01">http://www.guckes.net/Setup/i3-config.2015-10-01</a></li>
+      </ul></li>
+</ul>
+
+<h3>Vim: Writing</h3>
+
+<ul>
+  <li><a href="http://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/">Text Objects</a></li>
+  <li><a href="http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118">Your problem with Vim is that you don&#39;t grok vi.</a></li>
+</ul>
+
+<h2>Re-load vimrc when changing it:</h2>
+<div class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="k">au</span> <span class="nb">BufWritePost</span> $MYVIMRC<span class="p">,~</span><span class="sr">/.dotfiles/</span>vimrc<span class="p">,</span>$MYVIMRC.local nested :source $MYVIMRC
+</code></pre></div>
