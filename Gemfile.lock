@@ -102,6 +102,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (11.1.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -125,7 +126,8 @@ DEPENDENCIES
   bourbon
   middleman (~> 4.1)
   middleman-livereload (~> 3.4)
+  rake
   stringex
 
 BUNDLED WITH
-   1.10.6
+   1.12.1
