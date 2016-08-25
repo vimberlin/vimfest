@@ -1,5 +1,7 @@
 # ConfMan: Conference Site Template
 
+[![Join the chat at https://gitter.im/vimberlin/vimfest](https://badges.gitter.im/vimberlin/vimfest.svg)](https://gitter.im/vimberlin/vimfest?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## What is it?
 
 Middleman is a **single page** conference site starting point for the [Middleman](http://middlemanapp.com/) static site generator.
