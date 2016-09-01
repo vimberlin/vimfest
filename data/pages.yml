@@ -1,11 +1,11 @@
-- News: Latest conference news
-- Location: the place for the vimfest 2016
-- Newsletter: Stay informed about the latest changes
+- News:
+- Location:
+- Agenda: null
+- Speakers:
+- Newsletter:
 - Recap Vimfest 2015: Read about what people learned last year
-# - Speakers: null
 # - About: Hello world
 # - Travel: null
-# - Calendar: null
 # - Tickets: null
 # - Sponsors: null
 # - Team: null
