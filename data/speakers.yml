@@ -1,11 +1,24 @@
-- id: 1
-  name: Matthias Günther
-  work:
-    company: MyHammer
-    title: Developer and Agile Coach
-  bio: hello world
-       adasd
+- name: <a href="http://www.moolenaar.net/">Bram Moolenaar</a>
+  bio: Vim maintainer
+  social:
+    github: brammool
+- name: <a href="https://justinmk.github.io/">Justin M. Keyes</a>
+  bio: <a href="https://twitter.com/Neovim">@Neovim</a>@Neovim container
+  social:
+    twitter: justinmk
+    github: justinmk
+- name: <a href="https://daniel.hahler.de/">Daniel Hahler</a>
+  bio: Web Engineer. Django. Full stack. <a href="https://github.com/blueyed/">https://github.com/blueyed/</a> <a href="https://www.openhub.net/accounts/blueyed/">https://www.openhub.net/accounts/blueyed/</a>
+  social:
+    twitter: blueyed
+    github: blueyed
+- name: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
+  bio: Idealist, Vim, zsh, tmux, Debugger, Backend Developer, TYPO3
+  social:
+    twitter: layneobserdia
+    github: DanielSiepmann
+- name: <a href="http://wikimatze.de/">Matthias Günther</a>
+  bio: Writing <a href="http://padrinobook.com/">padrinobook</a>, running <a href="http://vimberlin.de/">vimberlin</a>, updating <a href="http://padrinorb.com/">padrinorb</a>, sreencasting <a href="https://twitter.com/padrinocasts">@padrinocasts</a> and organizing <a href="http://vimfest.de/">@vim_fest</a>
   social:
     twitter: wikimatze
     github: wikimatze
-
