@@ -1,10 +1,14 @@
-<% data.speakers.each do |speaker| %>
-  <div>
-  <%= markdown speaker.name %>
-  <%= markdown speaker.work.company %>
-  <%= markdown speaker.work.title %>
-  <%= markdown speaker.bio %>
-  <%= markdown speaker.social.twitter %>
-  <%= markdown speaker.social.github %>
-  </div>
-<% end %>
+<div class="row">
+  <% data.speakers.each do |speaker| %>
+    <div class="col-md-<%= 12 / data.speakers.length %> col-xs-12" >
+      <h4>
+        <%= speaker.name %><br>
+        <% if speaker.social.twitter %>
+        <span> <a href="https://twitter.com/<%= speaker.social.twitter %>"><i class="fa fa-twitter"></i></a></span>
+        <% end %>
+        <span> <a href="https://github.com/<%= speaker.social.github %>"><i class="fa fa-github"></i></a></span>
+      </h4>
+      <h5><%= speaker.bio %></h5>
+    </div>
+  <% end %>
+</div>
