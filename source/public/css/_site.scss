@@ -7,6 +7,10 @@ body {
   }
 }
 
+iframe, object, embed {
+    max-width: 100%;
+}
+
 .navbar-placeholder {
   height: 50px;
 }
