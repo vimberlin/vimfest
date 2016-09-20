@@ -30,11 +30,20 @@ scripts:
           title = page.keys[0]
           subtext = page[title]
         %>
-        <li><a href="#<%= title.to_url %>" title="<%= subtext %>"><%= title %></a></li>
+        <% if title.include?("Recap") %>
+          <li class="hidden-xs"><a href="#<%= title.to_url %>" title="<%= subtext %>"><%= title %></a></li>
+          <% else %>
+          <li><a href="#<%= title.to_url %>" title="<%= subtext %>"><%= title %></a></li>
+        <% end %>
         <% end %>
         <li>
-          <a target="_blank" href="https://vimfest.titanpad.com/2016">
-            Signup
+          <a  target="_blank" href="https://gitter.im/vimberlin/vimfest">
+            Chat
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://events.titanpad.com/2016-vimfest">
+            Titanpad
           </a>
         </li>
         <li class="social">
@@ -71,6 +80,11 @@ scripts:
 <div id="<%= id %>" class="block">
   <div class="container">
     <div class="row">
+      <% if title.include?("Recap") %>
+        <div class="hidden-xs">
+      <% else %>
+        <div class="col-xs-12">
+      <% end %>
       <div class="col-xs-12">
         <div class="page-header">
           <h1>
