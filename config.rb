@@ -11,7 +11,7 @@ set :images_dir, 'public/images'
 
 helpers do
   def markdown(data)
-    Tilt['md'].new { data }.render
+    Tilt::KramdownTemplate.new { data }.render
   end
 end
 
