@@ -22,7 +22,7 @@ task :deploy do
   system "rm -rf build/"
   system "middleman b"
   system "rsync -vru -e \"ssh\" --del build/* xa6195@xa6.serverdomain.org:/home/www/vimfest/"
-  puts '# Please refer to http://vimfest.de to visit the live system'
+  puts '# Please refer to http://vimfest.org to visit the live system'
 end
 
 desc "Generate Page"
