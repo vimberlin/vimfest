@@ -10,7 +10,7 @@
       <%= tag :meta, :name => name, :content => content %>
     <% end %>
 
-    <title><%= current_page.data.title || data.global.title || "Vimfest 2016" %></title>
+    <title><%= current_page.data.title || data.global.title || "Vimfest" %></title>
 
     <% current_page.data.styles.each do |style| %>
     <%= stylesheet_link_tag style %>
