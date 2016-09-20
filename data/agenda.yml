@@ -1,0 +1,150 @@
+rooms:
+  "Friday, 16 September <br>(Hacking)":
+  "Saturday, 17 September <br>(Talks, Tools, Questions)":
+  "Sunday, 18 September <br>(Hacking, Lessons learned)":
+
+tracks:
+  "Friday, 16 September <br>(Hacking)":
+    - type: break
+      description: Boarding
+      start: "9:30"
+      end: "10:00"
+      icon: barcode
+
+    - type: talk
+      speaker: Opening speech - <a href="http://wikimatze.de">Matthias Günther</a>
+      abstract: Vimfest begins
+      icon: paper-plane
+      start: "10:00"
+      end: "10:10"
+
+    - type: hacking
+      headline: Hacking
+      description: Work on your personal **projects**, talk to others, explain your workflow ...
+      start: "10:10"
+      end: "13:00"
+      icon: users
+
+    - type: break
+      description: Lunch
+      icon: cutlery
+      start: "13:00"
+      end: "14:30"
+      url: http://doodle.com/poll/f85272yurf9nchgs
+
+    - type: hacking
+      headline: Hacking
+      description: Work on your personal **projects**, talk to others, explain your workflow ...
+      start: "14:30"
+      end: "17:00"
+      icon: users
+
+    - type: break
+      description: Break
+      icon: pause
+      start: "17:00"
+      end: "17:30"
+
+    - type: hacking
+      headline: Hacking
+      description: Work on your personal **projects**, talk to others, explain your workflow ...
+      start: "17:30"
+      end: "19:00"
+      icon: users
+
+    - type: break
+      description: Dinner + Drinks
+      icon: cutlery
+      start: "19:00"
+
+  "Saturday, 17 September <br>(Talks, Tools, Questions)":
+    - type: break
+      description: Boarding
+      start: "10:00"
+      end: "10:10"
+      icon: barcode
+
+    - type: talk
+      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
+      topic: Introduction to Git for daily usage
+      abstract: Daniel will tell us how to use git on a daily basis
+      icon: paper-plane
+      start: "10:20"
+      end: "11:00"
+
+    - type: talk
+      speaker: <a href="https://github.com/justinmk">Justin M. Keyes</a>
+      topic: Neovim
+      abstract: This presentation is a brief introduction into Neovim
+      icon: paper-plane
+      start: "11:00"
+      end: "12:00"
+
+    - type: break
+      description: Lunch
+      icon: cutlery
+      start: "12:00"
+      end: "13:30"
+
+    - type: talk
+      topic: Vim 8.0
+      speaker: <a href="http://www.moolenaar.net/">Bram Moolenaar</a>
+      abstract: <a href="http://vimhelp.appspot.com/version8.txt.html">Vim 8.0</a> is going to have many interesting features. After that there will be a Q&A session.
+      icon: paper-plane
+      start: "14:00"
+      end: "16:00"
+
+    - type: talk
+      topic: My Vim Setup
+      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
+      abstract: Explains his vimrc file
+      icon: paper-plane
+      start: "16:00"
+      end: "16:30"
+
+    - type: talk
+      topic: Lightning talks
+      speaker: Various people
+      abstract: Bits and pieces of my Vim setup - <a href="https://daniel.hahler.de/">Daniel Hahler</a><br>
+      icon: paper-plane
+      start: "16:30"
+      end: "19:00"
+
+    - type: break
+      description: Dinner + Drinks
+      icon: cutlery
+      start: "19:00"
+
+  "Sunday, 18 September <br>(Hacking, Lessons learned)":
+    - type: break
+      description: Boarding
+      start: "10:00"
+      end: "10:10"
+      icon: barcode
+
+    - type: hacking
+      headline: Hacking
+      description: Work on your personal **projects**, talk to others, explain your workflow ...
+      start: "10:10"
+      end: "13:00"
+      icon: users
+
+    - type: break
+      description: Lunch
+      icon: cutlery
+      start: "13:00"
+      end: "14:30"
+
+    - type: hacking
+      headline: Hacking
+      description: Work on your personal **projects**, talk to others, explain your workflow ...
+      start: "14:30"
+      end: "17:00"
+      icon: users
+
+    - type: talk
+      speaker: Closing speech - <a href="http://wikimatze.de">Matthias Günther</a>
+      abstract: Vimfest ends
+      icon: paper-plane
+      start: "17:00"
+      end: "17:30"

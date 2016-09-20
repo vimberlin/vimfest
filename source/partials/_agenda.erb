@@ -1,0 +1,65 @@
+<div class="row">
+<% data.agenda.rooms.each do |room, room_name| %>
+  <div class="col-md-<%= 12 / data.agenda.rooms.length %> col-xs-12" >
+    <% sessions = data.agenda.tracks[room] %>
+    <h3><%= room %> <small><%= room_name %></small></h3>
+    <% sessions.each do |track| %>
+    <article class="panel">
+      <% if track.type == "talk" %>
+        <h4>
+          <% if track.icon %>
+            <i class="fa fa-<%= track.icon %>"></i>
+          <% end %>
+          <%= track.topic || "TBA" %>
+        </h4>
+        <h5>
+          <%= track.speaker || "TBA" %>
+        </h5>
+        <% if track.start %>
+          <time><%= track.start %> - <%= track.end %></time>
+        <% end %>
+        <p>
+        <% if track.abstract %>
+          <%= markdown track.abstract %>
+        <% else %>
+          To be announced.
+        <% end %>
+        </p>
+        <% elsif track.type == "hacking" %>
+          <h4>
+            <% if track.icon %>
+              <i class="fa fa-<%= track.icon %>"></i>
+            <% end %>
+            <%= track.headline || "TBA" %>
+          </h4>
+        <% if track.start %>
+          <time><%= track.start %> - <%= track.end %></time>
+        <% end %>
+        <p>
+        <% if track.description %>
+          <%= markdown track.description %>
+        <% else %>
+          To be announced.
+        <% end %>
+        </p>
+      <% elsif track.type == "break" %>
+        <h4>
+          <% if track.icon %>
+            <i class="fa fa-<%= track.icon %>"></i>
+          <% end %>
+          <%= track.description || "Break" %>
+        </h4>
+        <% if track.start %>
+          <time><%= track.start %> - <%= track.end %></time>
+        <% end %>
+        <% if track.url %>
+          <br>
+          Please register at <a href="<%= track.url %>">lunch doodle</a>.
+        <% end %>
+
+      <% end %>
+    </article>
+    <% end %>
+  </div>
+<% end %>
+</div>
