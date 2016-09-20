@@ -17,11 +17,14 @@ scripts:
         <span class="icon-bar"></span>
       </button>
     </div>
+    <div class="block" id="home">
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <!-- <li class="active"> -->
-        <!--   <a href="#home">Home</a> -->
-        <!-- </li> -->
+        <li>
+          <a target="_blank" href="/">
+    <img class="img-responsive" style="display: block; text-align: center; margin-left: auto; margin-right: auto;" src="/public/images/vimfest.png" alt="Vimfest Berlin is the community-driven Vim "Hackathon" in Berlin, organized by the Vim Berlin user group and Vim enthusiasts from other cities.">
+          </a>
+        </li>
         <% data.pages.each do |page| %>
         <%
           title = page.keys[0]
