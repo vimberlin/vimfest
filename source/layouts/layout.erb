@@ -19,6 +19,12 @@
   </head>
 
   <body class="<%= page_classes %>" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <%= partial "partials/header_navigation" %>
+
+    <header id="home">
+      <%= partial "partials/headline" %>
+    </header>
+
     <%= yield %>
     <% data.styles.scripts.each do |script| %>
     <%= javascript_include_tag script %>

@@ -1,9 +1,3 @@
-<%= partial "partials/header_navigation" %>
-
-<header id="home">
-<%= partial "partials/headline" %>
-</header>
-
 <% data.pages.each do |page| %>
 <%
   title = page.keys[0]
@@ -46,11 +40,4 @@
 </div>
 <% end %>
 
-<footer id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-      </div>
-    </div>
-  </div>
-</footer>
+<%= partial "partials/footer" %>
