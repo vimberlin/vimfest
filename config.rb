@@ -9,6 +9,11 @@ set :css_dir, 'public/css'
 set :js_dir, 'public/js'
 set :images_dir, 'public/images'
 
+activate :blog do |blog|
+  blog.permalink = "/{title}"
+  blog.layout = "blog"
+end
+
 helpers do
   def markdown(data)
     Tilt::KramdownTemplate.new { data }.render
