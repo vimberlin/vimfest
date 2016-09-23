@@ -12,15 +12,15 @@
 
     <title><%= current_page.data.title || data.global.title || "Vimfest" %></title>
 
-    <% current_page.data.styles.each do |style| %>
-    <%= stylesheet_link_tag style %>
+    <% data.styles.css.each do |style| %>
+      <%= stylesheet_link_tag style %>
     <% end %>
     <%= stylesheet_link_tag "main" %>
   </head>
 
   <body class="<%= page_classes %>" data-spy="scroll" data-target=".navbar" data-offset="50">
     <%= yield %>
-    <% current_page.data.scripts.each do |script| %>
+    <% data.styles.scripts.each do |script| %>
     <%= javascript_include_tag script %>
     <% end %>
   </body>
