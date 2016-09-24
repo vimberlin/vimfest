@@ -10,7 +10,7 @@ set :js_dir, 'public/js'
 set :images_dir, 'public/images'
 
 activate :blog do |blog|
-  blog.permalink = "/{title}"
+  blog.permalink = "/news/{year}-{month}-{day}-{title}"
   blog.layout = "blog"
 end
 
