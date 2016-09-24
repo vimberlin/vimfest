@@ -1,21 +1,13 @@
 title: Vimfest 2017, 22 - 24 September
 date: 11.10.2014
 
-venue:
-  name: Ars Electronica
-  address: Ars Electronica Strasse
-  coords: 15.21231, 15.123123
-
 contact:
   mail: vimfestberlin@gmail.com
 
 social:
   twitter: vim_fest
   facebook: vimfestberlin
-
-event:
-  eventbrite: http://codefront2014.eventbrite.com
-  lanyrd: http://lanyrd.com/2014/codefront
+  rss: /feed.xml
 
 meta:
   description: Vimfest Berlin is the community-driven Vim "Hackathon" in Berlin, organized by the Vim Berlin user group and Vim enthusiasts from other cities.

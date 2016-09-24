@@ -16,6 +16,7 @@
       <%= stylesheet_link_tag style %>
     <% end %>
     <%= stylesheet_link_tag "main" %>
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
 
   <body class="<%= page_classes %>" data-spy="scroll" data-target=".navbar" data-offset="50">
