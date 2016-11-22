@@ -14,7 +14,7 @@ task :staging do
   system "rm -rf build/"
   system "middleman b"
   system "rsync -vru -e \"ssh\" --del build/* xa6195@xa6.serverdomain.org:/home/www/stagingvimfest/"
-  puts '# Please refer to http://vimfest.wikimatze.de to visit the staging system'
+  puts '# Please refer to https://vimfest.wikimatze.de to visit the staging system'
 end
 
 desc "Deploy"
@@ -22,7 +22,7 @@ task :deploy do
   system "rm -rf build/"
   system "middleman b"
   system "rsync -vru -e \"ssh\" --del build/* xa6195@xa6.serverdomain.org:/home/www/vimfest/"
-  puts '# Please refer to http://vimfest.org to visit the live system'
+  puts '# Please refer to https://vimfest.org to visit the live system'
 end
 
 desc "Generate Page"
