@@ -12,6 +12,7 @@ set :images_dir, 'public/images'
 activate :blog do |blog|
   blog.permalink = "/news/{year}-{month}-{day}-{title}.html"
   blog.layout = "blog"
+  blog.publish_future_dated = true
 end
 
 helpers do
