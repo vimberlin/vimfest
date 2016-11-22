@@ -1,75 +1,27 @@
----
-styles:
-  - //netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
-  - //netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css
-
-scripts:
-  - //cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js
-  - //netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js
----
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="block" id="home">
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav">
-        <li>
-          <a target="_blank" href="/">
-    <img class="img-responsive" style="display: block; text-align: center; margin-left: auto; margin-right: auto;" src="/public/images/vimfest.png" alt="Vimfest Berlin is the community-driven Vim "Hackathon" in Berlin, organized by the Vim Berlin user group and Vim enthusiasts from other cities.">
-          </a>
-        </li>
-        <% data.pages.each do |page| %>
-        <%
-          title = page.keys[0]
-          subtext = page[title]
-        %>
-        <% if title.include?("Recap") %>
-          <li class="hidden-xs"><a href="#<%= title.to_url %>" title="<%= subtext %>"><%= title %></a></li>
-          <% else %>
-          <li><a href="#<%= title.to_url %>" title="<%= subtext %>"><%= title %></a></li>
-        <% end %>
-        <% end %>
-        <li>
-          <a  target="_blank" href="https://gitter.im/vimberlin/vimfest">
-            Chat
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://events.titanpad.com/2016-vimfest">
-            Titanpad
-          </a>
-        </li>
-        <li class="social">
-          <a target="_blank" href="http://twitter.com/<%= data.global.social.twitter %>">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a target="_blank"href="https://www.facebook.com/<%= data.global.social.facebook %>">
-            <i class="fa fa-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:<%= data.global.contact.mail %>?subject=<%= data.global.contact.title %> Vimfest 2016">
-            <i class="fa fa-envelope"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="navbar-placeholder"></div>
-
 <header id="home">
-<%= partial "partials/header" %>
+  <%= partial "partials/headline" %>
 </header>
+
+<div class="container">
+  <!--<h2>Latest News</h2>-->
+  <% blog.articles[0..1].each_with_index do |article, i| %>
+    <% if i == 0 %>
+    <article>
+      <h3>
+        <a href="<%= article.url %>"><%= article.title %></a>
+      </h3>
+      <time datetime="<%= article.date.strftime('%y-%d-%m')%>" pubdate="">Posted on <%= article.date.strftime('%B %e, %Y')%></time>
+      <br>
+      <br>
+
+      <%= article.body %>
+
+      <br>
+      <a href="/news">More news</a>
+    </article>
+    <% end %>
+  <% end %>
+</div>
 
 <% data.pages.each do |page| %>
 <%
@@ -113,11 +65,4 @@ scripts:
 </div>
 <% end %>
 
-<footer id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-      </div>
-    </div>
-  </div>
-</footer>
+<%= partial "partials/footer" %>

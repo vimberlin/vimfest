@@ -1,22 +1,22 @@
-- title: Registration closed
-  date: 2016.09.03
-  tagline: We have over 30 people attending and didn't expect so many people signing up. We are closing the registration.
-- title: Speakers
-  date: 2016.09.01
-  tagline: The <a href="/#speakers">speakers list</a> is now available.
-- title: Agenda
-  date: 2016.08.28
-  tagline: The <a href="/#agenda">agenda</a> is available.
-- title: Location - Individual Network Berlin e.V.
-  date: 2016.08.24
-  tagline: Will be <a href="https://www.in-berlin.de/space">Individual Network Berlin e.V.,Lehrter Str. 53, 10557 Berlin</a>- more details under <a href="/#location">location</a>.
-- title: Recap Vimfest 2015
-  date: 2016.07.01
-  tagline: Read under <a href="/#recap-vimfest-2015">Vimfest Recap 2015</a> what people learned last year.
-- title: Voices from last year
-  date: 2016.05.11
-  tagline: Read under <a href="/#voices">voices</a> what people are saying about Vimfest 2015.
-- title: Vimfest is back and got a date 16 - 18 September 2016
-  date: 2016.03.10
-  tagline: Last year was a success and we want to make the magic happen again. It will take place on the 16 - 18 September 2016. The location needs to be confirmed.
+# - title: Registration closed
+#   date: 2016.09.03
+#   tagline: We have over 30 people attending and didn't expect so many people signing up. We are closing the registration.
+# - title: Speakers
+#   date: 2016.09.01
+#   tagline: The <a href="/#speakers">speakers list</a> is now available.
+# - title: Agenda
+#   date: 2016.08.28
+#   tagline: The <a href="/#agenda">agenda</a> is available.
+# - title: Location - Individual Network Berlin e.V.
+#   date: 2016.08.24
+#   tagline: Will be <a href="https://www.in-berlin.de/space">Individual Network Berlin e.V.,Lehrter Str. 53, 10557 Berlin</a>- more details under <a href="/#location">location</a>.
+# - title: Recap Vimfest 2015
+#   date: 2016.07.01
+#   tagline: Read under <a href="/#recap-vimfest-2015">Vimfest Recap 2015</a> what people learned last year.
+# - title: Voices from last year
+#   date: 2016.05.11
+#   tagline: Read under <a href="/#voices">voices</a> what people are saying about Vimfest 2015.
+- title: Vimfest is back 22 - 24 September 2016
+  date: 2017.01.02
+  tagline: Last year was a success and we want to make the magic happen again. It will take place on the 22 - 24 September 2016. The location and talks will be announced.
 

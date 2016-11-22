@@ -1,0 +1,96 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="block" id="home">
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="/">
+              <img class="img-responsive" style="display: block; text-align: center; margin-left: auto; margin-right: auto;" src="/public/images/vimfest.png" alt="Vimfest Berlin is the community-driven Vim &quot;Hackathon&quot; in Berlin, organized by the Vim Berlin user group and Vim enthusiasts from other cities.">
+            </a>
+          </li>
+          <% data.pages.each do |page| %>
+            <%
+              title = page.keys[0]
+              subtext = page[title]
+            %>
+        <% if title.include?("Recap") %>
+          <li class="hidden-xs"><a href="#<%= title.to_url %>" title="<%= subtext %>"><%= title %></a></li>
+        <% else %>
+          <li><a href="#<%= title.to_url %>" title="<%= subtext %>"><%= title %></a></li>
+        <% end %>
+      <% end %>
+      <li>
+        <a href="/news">
+          News
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://gitter.im/vimberlin/vimfest">
+          Chat
+        </a>
+      </li>
+      <li>
+        <a  target="_blank" href="http://eepurl.com/ccZWOL">
+          Newsletter
+        </a>
+      </li>
+      <!--
+        <li>
+        <a target="_blank" href="https://events.titanpad.com/2017-vimfest">
+        Titanpad
+        </a>
+        </li>
+      -->
+      <li>
+        <a target="_blank" href="http://twitter.com/<%= data.global.social.twitter %>">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.facebook.com/<%= data.global.social.facebook %>">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="<%= data.global.social.rss %>">
+          <i class="fa fa-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:<%= data.global.contact.mail %>?subject=<%= data.global.contact.title %> Vimfest">
+          <i class="fa fa-envelope"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="/vimfest2016">
+          Vimfest 2016
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="/recap-vimfest-2016">
+          Recap Vimfest 2016
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="http://vimberlin.de/vimfest-october-2015">
+          Vimfest 2015
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="/recap-vimfest-2015">
+          Recap Vimfest 2015
+        </a>
+      </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<div class="navbar-placeholder"></div>
