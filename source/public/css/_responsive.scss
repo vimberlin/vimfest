@@ -12,13 +12,24 @@
 
 }
 @media (min-width: $screen-tablet) {
-  // tablets
+  body {
+    font-size: 15px;
+  }
 }
+
 @media (min-width: $screen-desktop) {
-  // desktop
+  body {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: $screen-lg-desktop){
-  // large desktop
+  body {
+    font-size: 17px;
+  }
+
+  #navbar ul {
+    font-size: 15px;
+  }
 }
 
