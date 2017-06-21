@@ -64,19 +64,35 @@ tracks:
       end: "10:10"
       icon: barcode
 
-    # - type: talk
-    #   speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
-    #   topic: Introduction to Git for daily usage
-    #   abstract: Daniel will tell us how to use git on a daily basis
-    #   icon: paper-plane
-    #   start: "10:20"
-    #   end: "11:00"
+    - type: talk
+      speaker: <a href="https://www.asktherelic.com/" alt="Matthew Behrens">Matthew Behrens</a>
+      topic: My theory of VIM the IDE
+      abstract: TBD
+      icon: paper-plane
+      start: "10:20"
+      end: "11:20"
+
+    - type: talk
+      speaker: <a href="https://wikimatze.de" alt="Matthias Günther">Matthias Günther</a>
+      topic: Cmus - the perfect music player for the terminal
+      abstract: TBD
+      icon: paper-plane
+      start: "11:20"
+      end: "12:00"
 
     - type: break
       description: Lunch
       icon: cutlery
       start: "12:00"
       end: "13:30"
+
+    - type: talk
+      speaker: <a href="https://twitter.com/tweetblackode" alt="John Ankanna">John Ankanna</a>
+      topic: Why I left Vim and came back
+      abstract: Sharing Experiences of How I got into vim and reasons for leaving vim and coming back to the gem of editors Vim
+      icon: paper-plane
+      start: "13:45"
+      end: "14:30"
 
     - type: talk
       topic: Lightning talks
