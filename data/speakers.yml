@@ -1,9 +1,20 @@
-- name: <a href="">TBD</a>
-  bio: TBD
+- name: <a href="https://twitter.com/tweetblackode">Ankanna</a>
+  bio: Elixir Erlang Ember
   social:
-    github: TBD
-- name: <a href="">TBD</a>
-  bio: TBD
+    twitter: tweetblackode
+    github: blackode
+- name: <a href="https://www.asktherelic.com/">Matt Behrens</a>
+  bio: Software engineer and traveler.
   social:
-    twitter: justinmk
-    github: TBD
+    twitter: askedrelic
+    github: askedrelic
+- name: <a href="https://www.asktherelic.com/">Daniel Siepmann</a>
+  bio: Idealist, Vim, zsh, tmux, Debugger, Backend Developer, TYPO3
+  social:
+    twitter: layneobserdia
+    github: DanielSiepmann
+- name: <a href="https://wikimatze.de/">Matthias Günther</a>
+  bio: Writing @padrinobook, running @vimberlin, updating @padrinorb, screencasting @padrinocasts and organizing @vim_fest
+  social:
+    twitter: wikimatze
+    github: wikimatze
