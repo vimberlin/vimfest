@@ -95,6 +95,14 @@ tracks:
       end: "14:30"
 
     - type: talk
+      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
+      topic: Writing NeoVim Plugins using Python Plugin
+      abstract: I've written my first NeoVim plugin using the new Plugin API and Python 3, see <a href="https://github.com/neovim/python-client" alt="Python 3 client for Neovim Plugin API">python-client</a>. I will introduce how to write plugins using the new API.
+      icon: paper-plane
+      start: "14:45"
+      end: "15:30"
+
+    - type: talk
       topic: Lightning talks
       speaker: Various people
       abstract: TBD - <a href="">TBD</a><br>
