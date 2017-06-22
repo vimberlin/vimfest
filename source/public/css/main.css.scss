@@ -2,6 +2,33 @@
   margin: 68px 0 20px !important;
 }
 
+.connect {
+  font-size: 5em;
+  margin-right: 20px;
+}
+
+.link-connect:hover {
+  text-decoration: none;
+}
+
+.link-connect {
+  text-decoration: none;
+}
+
+.twitter-connect {
+  color: #55acee;
+  text-decoration: none;
+}
+.facebook-connect {
+  color: #3b5998;
+}
+.google-plus-connect {
+  color: #d34836;
+}
+.youtube-connect {
+  color: #bb0000;
+}
+
 @import "bourbon";
 @import "variables";
 @import "mixins";
