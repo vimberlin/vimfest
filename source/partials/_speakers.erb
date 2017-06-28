@@ -1,14 +1,40 @@
-<div class="row">
-  <% data.speakers.each do |speaker| %>
-    <div class="col-md-<%= 12 / data.speakers.length %> col-xs-12" >
-      <h4>
+<% data.speakers.each_with_index do |speaker, index| %>
+  <% if index % 4 == 0 %>
+  <div class="row">
+    <div class="col-md-12 col-xs-12" >
+      <div class="col-md-3 col-xs-12">
+        <h4>
         <%= speaker.name %><br>
-        <% if speaker.social.twitter %>
-        <span> <a href="https://twitter.com/<%= speaker.social.twitter %>"><i class="fa fa-twitter"></i></a></span>
+        </h4>
+        <% if speaker.image %>
+          <img class="speaker-image" src="<%= speaker.image %>" />
         <% end %>
-        <span> <a href="https://github.com/<%= speaker.social.github %>"><i class="fa fa-github"></i></a></span>
-      </h4>
-      <h5><%= speaker.bio %></h5>
+        <h5><%= speaker.bio %></h5>
+        <% if speaker.social.twitter %>
+          <span><a href="https://twitter.com/<%= speaker.social.twitter %>"><i class="speaker-social-icons fa fa-twitter"></i></a></span>
+        <% end %>
+          <span><a href="https://github.com/<%= speaker.social.github %>"><i class="speaker-social-icons fa fa-github"></i></a></span>
+        <br>
+      </div>
+  <% else %>
+      <div class="col-md-3 col-xs-12">
+        <h4>
+        <%= speaker.name %><br>
+        </h4>
+        <% if speaker.image %>
+          <img class="speaker-image" src="<%= speaker.image %>" />
+        <% end %>
+        <h5><%= speaker.bio %></h5>
+        <% if speaker.social.twitter %>
+          <span><a href="https://twitter.com/<%= speaker.social.twitter %>"><i class="speaker-social-icons fa fa-twitter"></i></a></span>
+        <% end %>
+          <span><a href="https://github.com/<%= speaker.social.github %>"><i class="speaker-social-icons fa fa-github"></i></a></span>
+        <br>
+      </div>
+  <% end %>
+  <% if index % 4 == 3 %>
     </div>
+  </div>
+  <% end %>
   <% end %>
 </div>

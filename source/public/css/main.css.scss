@@ -29,6 +29,18 @@
   color: #bb0000;
 }
 
+.speaker-social-icons {
+  font-size: 3em;
+}
+
+.speaker-image {
+  border-radius: 50% !important;
+  overflow: hidden;
+  heigth: 120px;
+  width: 120px;
+  margin-left: 30px;
+}
+
 @import "bourbon";
 @import "variables";
 @import "mixins";
