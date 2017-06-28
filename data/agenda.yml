@@ -66,49 +66,89 @@ tracks:
 
     - type: talk
       speaker: <a href="https://www.asktherelic.com/" alt="Matthew Behrens">Matthew Behrens</a>
-      topic: My theory of VIM the IDE
-      abstract: TBD
+      topic: My theory of VIM the IDE.
+      abstract: I would like to highlight the abilities that I have assembled, to make Vim a good IDE for any language. These abilities involve easy file searching, grepping, syntax highlighting, and formatting of code to start.
       icon: paper-plane
       start: "10:20"
       end: "11:20"
 
     - type: talk
-      speaker: <a href="https://wikimatze.de" alt="Matthias Günther">Matthias Günther</a>
-      topic: Cmus - the perfect music player for the terminal
-      abstract: TBD
+      speaker: <a href="https://wikimatze.de">Matthias Günther</a>
+      topic: Vim everywhere on my machine
+      abstract: I will talk through the tools I'm using and how I make Vim shortcuts available nearly everywhere.
       icon: paper-plane
       start: "11:20"
-      end: "12:00"
+      end: "12:20"
 
     - type: break
       description: Lunch
       icon: cutlery
-      start: "12:00"
+      start: "12:30"
       end: "13:30"
 
     - type: talk
-      speaker: <a href="https://twitter.com/tweetblackode" alt="John Ankanna">John Ankanna</a>
+      speaker: <a href="https://twitter.com/tweetblackode">John Ankanna</a>
       topic: Why I left Vim and came back
-      abstract: Sharing Experiences of How I got into vim and reasons for leaving vim and coming back to the gem of editors Vim
+      abstract: Sharing Experiences of How I got into vim and reasons for leaving vim and coming back to the gem of editors Vim.
       icon: paper-plane
       start: "13:45"
       end: "14:30"
 
     - type: talk
-      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
-      topic: Writing NeoVim Plugins using Python Plugin
-      abstract: I've written my first NeoVim plugin using the new Plugin API and Python 3, see <a href="https://github.com/neovim/python-client" alt="Python 3 client for Neovim Plugin API">python-client</a>. I will introduce how to write plugins using the new API.
+      speaker: <a href="https://twitter.com/tweetblackode" >Justin M. Keyes</a>
+      topic: TBD
+      abstract: TBD
       icon: paper-plane
       start: "14:45"
       end: "15:30"
 
     - type: talk
-      topic: Lightning talks
-      speaker: Various people
-      abstract: TBD - <a href="">TBD</a><br>
+      speaker: <a href="https://dantleech.com" >Dan Leech</a>
+      topic: The quest for PHP Intellisense in VIM
+      abstract: VIM currently lacks many of the introspection and completion features (Intellisense) for PHP that are taken from granted in IDEs such as PHPStorm
       icon: paper-plane
-      start: "16:30"
-      end: "19:00"
+      start: "15:45"
+      end: "16:10"
+
+    - type: talk
+      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
+      topic: Writing NeoVim Plugins using Python Plugin
+      abstract: I've written my first NeoVim plugin using the new Plugin API and Python 3, see <a href="https://github.com/neovim/python-client" alt="Python 3 client for Neovim Plugin API">python-client</a>. I will introduce how to write plugins using the new API.
+      icon: lightbulb-o
+      start: "14:45"
+      end: "15:10"
+
+    - type: talk
+      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
+      topic: Python unit testing
+      abstract: How to add unit test to your Neovim Python plugin and executing them via <a href="https://github.com/janko-m/vim-test">vim-test</a><br> inside Neovim.
+      icon: lightbulb-o
+      start: "15:20"
+      end: "15:45"
+
+    - type: talk
+      speaker: <a href="https://wikimatze.de">Matthias Günther</a>
+      topic: CoVim - Collaborative Editing for Vim
+      abstract: In this session I want to play around with <a href="https://github.com/FredKSchott/CoVim">CoVim</a>
+      icon: lightbulb-o
+      start: "16:00"
+      end: "16:30"
+
+    - type: talk
+      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
+      topic: Gitlab CI
+      abstract: How to integrate Unittests, CGL and Co into Gitlab CI <a href="https://gitlab.com/DanielSiepmann/neotags/pipelines">neotags pipelines</a>.
+      icon: lightbulb-o
+      start: "16:40"
+      end: "17:05"
+
+    - type: talk
+      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
+      topic: Gitlab CI
+      abstract: How to integrate Unittests, CGL and Co into Gitlab CI <a href="https://gitlab.com/DanielSiepmann/neotags/pipelines">neotags pipelines</a>.
+      icon: lightbulb-o
+      start: "17:15"
+      end: "17:45"
 
     - type: break
       description: Dinner + Drinks
@@ -148,3 +188,4 @@ tracks:
       icon: paper-plane
       start: "17:00"
       end: "17:30"
+
