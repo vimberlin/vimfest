@@ -3,18 +3,35 @@
   social:
     twitter: tweetblackode
     github: blackode
+  image: https://pbs.twimg.com/profile_images/847600124154871814/n5FQJFy0_400x400.jpg
 - name: <a href="https://www.asktherelic.com/">Matt Behrens</a>
   bio: Software engineer and traveler.
   social:
     twitter: askedrelic
     github: askedrelic
-- name: <a href="https://www.asktherelic.com/">Daniel Siepmann</a>
+  image: https://pbs.twimg.com/profile_images/1772443295/photo_400x400.jpeg
+- name: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
   bio: Idealist, Vim, zsh, tmux, Debugger, Backend Developer, TYPO3
   social:
     twitter: layneobserdia
-    github: DanielSiepmann
+    https://pbs.twimg.com/profile_images/549278976711983104/M9CLpGgx_400x400.jpeggithub: DanielSiepmann
+  image: https://pbs.twimg.com/profile_images/671816252743118848/feffEHgN_400x400.jpg
 - name: <a href="https://wikimatze.de/">Matthias Günther</a>
   bio: Writing @padrinobook, running @vimberlin, updating @padrinorb, screencasting @padrinocasts and organizing @vim_fest
   social:
     twitter: wikimatze
     github: wikimatze
+  image: https://pbs.twimg.com/profile_images/790583330970402816/SsjCw-qH_400x400.jpg
+- name: <a href="https://justinmk.github.io/">Justin M. Keyes</a>
+  bio: Neovim maintainer, Vim contributor, software engineer
+  social:
+    twitter: justinmk
+    github: justinmk
+  image: https://pbs.twimg.com/profile_images/549278976711983104/M9CLpGgx_400x400.jpeg
+- name: <a href="https://dantleech.com">Daniel Leech</a>
+  bio: PHP / CMF Developer
+  social:
+    twitter: dantleech
+    github: dantleech
+  image: https://pbs.twimg.com/profile_images/731089522818224128/r7cGoKnL_400x400.jpg
+
