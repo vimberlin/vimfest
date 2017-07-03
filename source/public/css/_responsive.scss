@@ -9,17 +9,31 @@
     padding-left: 10px;
   }
 
-
+  #mapid {
+    width: 100%;
+    height: 200px;
+  }
 }
+
 @media (min-width: $screen-tablet) {
   body {
     font-size: 15px;
+  }
+
+  #mapid {
+    width: 100%;
+    height: 200px;
   }
 }
 
 @media (min-width: $screen-desktop) {
   body {
     font-size: 16px;
+  }
+
+  #mapid {
+    width: 800px;
+    height: 500px;
   }
 }
 
@@ -30,6 +44,11 @@
 
   #navbar ul {
     font-size: 15px;
+  }
+
+  #mapid {
+    width: 100%;
+    height: 500px;
   }
 }
 
