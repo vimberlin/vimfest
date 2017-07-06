@@ -65,17 +65,17 @@ tracks:
       icon: barcode
 
     - type: talk
-      speaker: <a href="https://www.asktherelic.com/" alt="Matthew Behrens">Matthew Behrens</a>
-      topic: My theory of VIM the IDE.
-      abstract: I would like to highlight the abilities that I have assembled, to make Vim a good IDE for any language. These abilities involve easy file searching, grepping, syntax highlighting, and formatting of code to start.
+      speaker: <a href="https://wikimatze.de">Matthias Günther</a>
+      topic: Vim everywhere on my machine
+      abstract: I will talk through the tools I'm using and how I make Vim shortcuts available nearly everywhere.
       icon: paper-plane
       start: "10:20"
       end: "11:20"
 
     - type: talk
-      speaker: <a href="https://wikimatze.de">Matthias Günther</a>
-      topic: Vim everywhere on my machine
-      abstract: I will talk through the tools I'm using and how I make Vim shortcuts available nearly everywhere.
+      speaker: <a href="https://twitter.com/tweetblackode">John Ankanna</a>
+      topic: Why I left Vim and came back
+      abstract: Sharing Experiences of How I got into vim and reasons for leaving vim and coming back to the gem of editors Vim.
       icon: paper-plane
       start: "11:20"
       end: "12:20"
@@ -87,9 +87,9 @@ tracks:
       end: "13:30"
 
     - type: talk
-      speaker: <a href="https://twitter.com/tweetblackode">John Ankanna</a>
-      topic: Why I left Vim and came back
-      abstract: Sharing Experiences of How I got into vim and reasons for leaving vim and coming back to the gem of editors Vim.
+      speaker: <a href="https://www.asktherelic.com/" alt="Matthew Behrens">Matthew Behrens</a>
+      topic: My theory of VIM the IDE.
+      abstract: I would like to highlight the abilities that I have assembled, to make Vim a good IDE for any language. These abilities involve easy file searching, grepping, syntax highlighting, and formatting of code to start.
       icon: paper-plane
       start: "13:45"
       end: "14:30"
