@@ -96,8 +96,8 @@ tracks:
 
     - type: talk
       speaker: <a href="https://twitter.com/tweetblackode" >Justin M. Keyes</a>
-      topic: TBD
-      abstract: TBD
+      topic: Neovim 0.2 features and future
+      abstract: Whats new in Neovim 0.2 and what will be the future of the project
       icon: paper-plane
       start: "14:45"
       end: "15:30"
