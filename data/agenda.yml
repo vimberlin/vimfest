@@ -1,10 +1,10 @@
 rooms:
-  "Friday, 22 September <br>(Hacking)":
+  "Friday, 22 September <br>(Hacking, Getting to know each other)":
   "Saturday, 23 September <br>(Talks, Tools, Questions)":
-  "Sunday, 24 September <br>(Hacking, Lessons learned)":
+  "Sunday, 24 September <br>(Hacking, Lessons learned, Planning Vimfest 2018)":
 
 tracks:
-  "Friday, 22 September <br>(Hacking)":
+  "Friday, 22 September <br>(Hacking, Getting to know each other)":
     - type: break
       description: Boarding
       start: "9:30"
@@ -105,7 +105,7 @@ tracks:
     - type: talk
       speaker: <a href="https://dantleech.com" >Dan Leech</a>
       topic: The quest for PHP Intellisense in VIM
-      abstract: VIM currently lacks many of the introspection and completion features (Intellisense) for PHP that are taken from granted in IDEs such as PHPStorm
+      abstract: Viable PHP Intellisense (autocompletion, introspection) in VIM has long been sought after, but it may finally be here.
       icon: paper-plane
       start: "15:45"
       end: "16:10"
@@ -155,7 +155,7 @@ tracks:
       icon: cutlery
       start: "19:00"
 
-  "Sunday, 24 September <br>(Hacking, Lessons learned)":
+  "Sunday, 24 September <br>(Hacking, Lessons learned, Planning Vimfest 2018)":
     - type: break
       description: Boarding
       start: "10:00"
