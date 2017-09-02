@@ -30,7 +30,13 @@
     </div>
 
     <%= partial "partials/footer" %>
+
+    <% data.styles.scripts.each do |script| %>
+    <%= javascript_include_tag script %>
+    <% end %>
   </body>
+  <%= partial "partials/leaflet" %>
+
   <!-- Piwik -->
   <script type="text/javascript">
 var _paq = _paq || [];
