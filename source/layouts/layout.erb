@@ -28,7 +28,7 @@
     <% end %>
 <script>
 
-  var mymap = L.map('mapid').setView([52.533759, 13.358553], 13);
+  var mymap = L.map('mapid').setView([52.47928, 13.45381], 13);
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     maxZoom: 17,
@@ -40,8 +40,8 @@
     shadowSize:   [50, 64], // size of the shadow
   });
 
-  L.marker([52.53443, 13.3585], {icon: vimfestIcon}).addTo(mymap)
-  .bindPopup("<b>Vimfest 2017!</b><br />Individual Network Berlin e.V., Lehrter Str. 53, 10557 Berlin ").openPopup();
+  L.marker([52.47928, 13.45381], {icon: vimfestIcon}).addTo(mymap)
+  .bindPopup("<b>Vimfest 2017!</b><br />Büro 2.0, Weigandufer 45, 12059 Berlin").openPopup();
 
   L.circle([51.508, -0.11], 500, {
     color: 'red',
