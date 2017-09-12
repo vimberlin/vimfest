@@ -1,10 +1,10 @@
 rooms:
-  "Friday, 22 September <br>(Hacking, Getting to know each other)":
+  "Friday, 22 September <br>(Getting to know each other)":
   "Saturday, 23 September <br>(Talks, Tools, Questions)":
   "Sunday, 24 September <br>(Hacking, Lessons learned, Planning Vimfest 2018)":
 
 tracks:
-  "Friday, 22 September <br>(Hacking, Getting to know each other)":
+  "Friday, 22 September <br>(Getting to know each other)":
     - type: break
       description: Boarding
       start: "9:30"
@@ -65,90 +65,88 @@ tracks:
       icon: barcode
 
     - type: talk
-      speaker: <a href="https://wikimatze.de">Matthias Günther</a>
-      topic: Vim everywhere on my machine
-      abstract: I will talk through the tools I'm using and how I make Vim shortcuts available nearly everywhere.
-      icon: paper-plane
+      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
+      topic: Writing NeoVim Plugins using Python Plugin
+      abstract: I've written my first NeoVim plugin using the new Plugin API and Python 3, see <a href="https://github.com/neovim/python-client" alt="Python 3 client for Neovim Plugin API">python-client</a>. I will introduce how to write plugins using the new API.
+      icon: lightbulb-o
       start: "10:20"
-      end: "11:20"
+      end: "10:50"
 
     - type: talk
-      speaker: <a href="https://twitter.com/tweetblackode">John Ankanna</a>
-      topic: Why I left Vim and came back
-      abstract: Sharing Experiences of How I got into vim and reasons for leaving vim and coming back to the gem of editors Vim.
+      speaker: <a href="https://dantleech.com" >Dan Leech</a>
+      topic: The quest for PHP Intellisense in VIM
+      abstract: Viable PHP Intellisense (autocompletion, introspection) in VIM has long been sought after, but it may finally be here.
+      icon: lightbulb-o
+      start: "11:00"
+
+      end: "11:30"
+    - type: talk
+      speaker: <a href="https://www.artansoft.com/">Raül Torralba Adsuara</a>
+      topic: VIM for PHP developers. The best editor with all IDE features.
+      abstract: Everybody knows that VIM is the best and fastest text editor, but some PHP developers change it for other IDEs like PHPStorm, Netbeans...
       icon: paper-plane
-      start: "11:20"
-      end: "12:20"
+      start: "11:40"
+      end: "12:40"
 
     - type: break
       description: Lunch
       icon: cutlery
-      start: "12:30"
-      end: "13:30"
+      start: "12:40"
+      end: "13:40"
 
     - type: talk
       speaker: <a href="https://www.asktherelic.com/" alt="Matthew Behrens">Matthew Behrens</a>
-      topic: My theory of VIM the IDE.
+      topic: My theory of VIM the IDE
       abstract: I would like to highlight the abilities that I have assembled, to make Vim a good IDE for any language. These abilities involve easy file searching, grepping, syntax highlighting, and formatting of code to start.
       icon: paper-plane
       start: "13:45"
       end: "14:30"
 
     - type: talk
-      speaker: <a href="https://twitter.com/tweetblackode" >Justin M. Keyes</a>
+      speaker: <a href="https://twitter.com/justinmk" >Justin M. Keyes</a>
       topic: Neovim 0.2 features and future
       abstract: Whats new in Neovim 0.2 and what will be the future of the project
       icon: paper-plane
       start: "14:45"
-      end: "15:30"
+      end: "15:45"
 
     - type: talk
-      speaker: <a href="https://dantleech.com" >Dan Leech</a>
-      topic: The quest for PHP Intellisense in VIM
-      abstract: Viable PHP Intellisense (autocompletion, introspection) in VIM has long been sought after, but it may finally be here.
-      icon: paper-plane
-      start: "15:45"
-      end: "16:10"
-
-    - type: talk
-      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
-      topic: Writing NeoVim Plugins using Python Plugin
-      abstract: I've written my first NeoVim plugin using the new Plugin API and Python 3, see <a href="https://github.com/neovim/python-client" alt="Python 3 client for Neovim Plugin API">python-client</a>. I will introduce how to write plugins using the new API.
+      speaker: <a href="http://blog.jaysinh.com/" >Jaysinh Shukla</a>
+      topic: Head first with vim specific helpfile
+      abstract: This talk will provide initial guidelines on writing vim helpfiles. User documentation is one of the important aspects of any software. Because vim has a great functionality of dealing helpfile inside the editor, it is very important to write helpfile accessible inside vim editor and not anywhere else.  Ideally, the talk will cover below points.
       icon: lightbulb-o
-      start: "14:45"
-      end: "15:10"
+      start: "16:00"
+      end: "16:30"
+
+    - type: break
+      description: Break
+      icon: pause
+      start: "16:30"
+      end: "17:00"
+
+    - type: talk
+      speaker: <a href="http://www.ramonvoges.de/">Ramon Voges</a>
+      topic: Neovim – The Historian's Best Friend
+      abstract: Historians write a lot of text. A helpful and supportive editor is crucial for their day to day work. In this talk I will introduce some of neo/vim's features and plugins I find most useful while dealing with text. Apart from several vim commands and settings, I will go into detail especially with regard to editing LaTeX and markdown files as well as using git.
+      icon: lightbulb-o
+      start: "17:10"
+      end: "17:40"
 
     - type: talk
       speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
       topic: Python unit testing
       abstract: How to add unit test to your Neovim Python plugin and executing them via <a href="https://github.com/janko-m/vim-test">vim-test</a><br> inside Neovim.
       icon: lightbulb-o
-      start: "15:20"
-      end: "15:45"
+      icon: lightbulb-o
+      start: "17:45"
+      end: "18:00"
 
     - type: talk
-      speaker: <a href="https://wikimatze.de">Matthias Günther</a>
-      topic: CoVim - Collaborative Editing for Vim
-      abstract: In this session I want to play around with <a href="https://github.com/FredKSchott/CoVim">CoVim</a>
+      topic: QA session
+      abstract: People can jump in, explain
       icon: lightbulb-o
-      start: "16:00"
-      end: "16:30"
-
-    - type: talk
-      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
-      topic: Gitlab CI
-      abstract: How to integrate Unittests, CGL and Co into Gitlab CI <a href="https://gitlab.com/DanielSiepmann/neotags/pipelines">neotags pipelines</a>.
-      icon: lightbulb-o
-      start: "16:40"
-      end: "17:05"
-
-    - type: talk
-      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
-      topic: Gitlab CI
-      abstract: How to integrate Unittests, CGL and Co into Gitlab CI <a href="https://gitlab.com/DanielSiepmann/neotags/pipelines">neotags pipelines</a>.
-      icon: lightbulb-o
-      start: "17:15"
-      end: "17:45"
+      start: "18:00"
+      end: "19:00"
 
     - type: break
       description: Dinner + Drinks
