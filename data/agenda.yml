@@ -5,57 +5,57 @@ rooms:
 
 tracks:
   "Friday, 22 September <br>(Getting to know each other)":
-    - type: break
-      description: Boarding
-      start: "9:30"
-      end: "10:00"
-      icon: barcode
-
-    - type: talk
-      speaker: Opening speech - <a href="http://wikimatze.de">Matthias Günther</a>
-      abstract: Vimfest begins
-      icon: paper-plane
-      start: "10:00"
-      end: "10:10"
+    # - type: break
+    #   description: Boarding
+    #   start: "9:30"
+    #   end: "10:00"
+    #   icon: barcode
+    #
+    # - type: talk
+    #   speaker: Opening speech - <a href="http://wikimatze.de">Matthias Günther</a>
+    #   abstract: Vimfest begins
+    #   icon: paper-plane
+    #   start: "10:00"
+    #   end: "10:10"
+    #
+    # - type: hacking
+    #   headline: Hacking
+    #   description: Work on your personal **projects**, talk to others, explain your workflow ...
+    #   start: "10:10"
+    #   end: "13:00"
+    #   icon: users
+    #
+    # - type: break
+    #   description: Lunch
+    #   icon: cutlery
+    #   start: "13:00"
+    #   end: "14:30"
+    #   # url: http://doodle.com/poll/f85272yurf9nchgs
+    #
+    # - type: hacking
+    #   headline: Hacking
+    #   description: Work on your personal **projects**, talk to others, explain your workflow ...
+    #   start: "14:30"
+    #   end: "17:00"
+    #   icon: users
+    #
+    # - type: break
+    #   description: Break
+    #   icon: pause
+    #   start: "17:00"
+    #   end: "17:30"
 
     - type: hacking
       headline: Hacking
       description: Work on your personal **projects**, talk to others, explain your workflow ...
-      start: "10:10"
-      end: "13:00"
-      icon: users
-
-    - type: break
-      description: Lunch
-      icon: cutlery
-      start: "13:00"
-      end: "14:30"
-      # url: http://doodle.com/poll/f85272yurf9nchgs
-
-    - type: hacking
-      headline: Hacking
-      description: Work on your personal **projects**, talk to others, explain your workflow ...
-      start: "14:30"
-      end: "17:00"
-      icon: users
-
-    - type: break
-      description: Break
-      icon: pause
       start: "17:00"
-      end: "17:30"
-
-    - type: hacking
-      headline: Hacking
-      description: Work on your personal **projects**, talk to others, explain your workflow ...
-      start: "17:30"
-      end: "19:00"
+      end: "20:00"
       icon: users
 
     - type: break
       description: Dinner + Drinks
       icon: cutlery
-      start: "19:00"
+      start: "20:00"
 
   "Saturday, 23 September <br>(Talks, Tools, Questions)":
     - type: break
@@ -143,7 +143,7 @@ tracks:
 
     - type: talk
       topic: QA session
-      abstract: People can jump in, explain
+      abstract: People can jump in, explain something, just talk
       icon: lightbulb-o
       start: "18:00"
       end: "19:00"
