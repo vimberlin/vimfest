@@ -137,21 +137,28 @@ tracks:
       topic: Python unit testing
       abstract: How to add unit test to your Neovim Python plugin and executing them via <a href="https://github.com/janko-m/vim-test">vim-test</a><br> inside Neovim.
       icon: lightbulb-o
-      icon: lightbulb-o
       start: "17:45"
       end: "18:00"
+
+    - type: talk
+      speaker: <a href="https://github.com/WolfgangMehner">Wolfgang Mehner</a>
+      topic: Vim Mapathon - An advanced introduction to maps
+      abstract: With a bit of effort and a few recurring tricks you can match or even improve upon the comfort the command-line completion your shell offers.
+      icon: lightbulb-o
+      start: "18:10"
+      end: "19:00"
 
     - type: talk
       topic: QA session
       abstract: People can jump in, explain something, just talk
       icon: lightbulb-o
-      start: "18:00"
-      end: "19:00"
+      start: "19:00"
+      end: "20:00"
 
     - type: break
       description: Dinner + Drinks
       icon: cutlery
-      start: "19:00"
+      start: "20:00"
 
   "Sunday, 24 September <br>(Hacking, Lessons learned, Planning Vimfest 2018)":
     - type: break
