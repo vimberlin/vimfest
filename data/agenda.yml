@@ -65,25 +65,25 @@ tracks:
       icon: barcode
 
     - type: talk
-      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
-      topic: Writing NeoVim Plugins using Python Plugin
-      abstract: I've written my first NeoVim plugin using the new Plugin API and Python 3, see <a href="https://github.com/neovim/python-client" alt="Python 3 client for Neovim Plugin API">python-client</a>. I will introduce how to write plugins using the new API.
+      speaker: <a href="">TBD</a>
+      topic: TBD
+      abstract: TBD
       icon: lightbulb-o
       start: "10:20"
       end: "10:50"
 
     - type: talk
-      speaker: <a href="https://dantleech.com" >Dan Leech</a>
-      topic: The quest for PHP Intellisense in VIM
-      abstract: Viable PHP Intellisense (autocompletion, introspection) in VIM has long been sought after, but it may finally be here.
+      speaker: <a href="">TBD</a>
+      topic: TBD
+      abstract: TBD
       icon: lightbulb-o
       start: "11:00"
-
       end: "11:30"
+
     - type: talk
-      speaker: <a href="https://www.artansoft.com/">Raül Torralba Adsuara</a>
-      topic: VIM for PHP developers. The best editor with all IDE features.
-      abstract: Everybody knows that VIM is the best and fastest text editor, but some PHP developers change it for other IDEs like PHPStorm, Netbeans...
+      speaker: <a href="">TBD</a>
+      topic: TBD
+      abstract: TBD
       icon: paper-plane
       start: "11:40"
       end: "12:40"
@@ -92,28 +92,28 @@ tracks:
       description: Lunch
       icon: cutlery
       start: "12:40"
-      end: "13:40"
+      end: "14:20"
 
     - type: talk
-      speaker: <a href="https://www.asktherelic.com/" alt="Matthew Behrens">Matthew Behrens</a>
-      topic: My theory of VIM the IDE
-      abstract: I would like to highlight the abilities that I have assembled, to make Vim a good IDE for any language. These abilities involve easy file searching, grepping, syntax highlighting, and formatting of code to start.
+      speaker: <a href="">TBD</a>
+      topic: TBD
+      abstract: TBD
       icon: paper-plane
       start: "13:45"
       end: "14:30"
 
     - type: talk
-      speaker: <a href="https://twitter.com/justinmk" >Justin M. Keyes</a>
-      topic: Neovim 0.2 features and future
-      abstract: Whats new in Neovim 0.2 and what will be the future of the project
+      speaker: <a href="">TBD</a>
+      topic: TBD
+      abstract: TBD
       icon: paper-plane
       start: "14:45"
       end: "15:45"
 
     - type: talk
-      speaker: <a href="http://blog.jaysinh.com/" >Jaysinh Shukla</a>
-      topic: Head first with vim specific helpfile
-      abstract: This talk will provide initial guidelines on writing vim helpfiles. User documentation is one of the important aspects of any software. Because vim has a great functionality of dealing helpfile inside the editor, it is very important to write helpfile accessible inside vim editor and not anywhere else.  Ideally, the talk will cover below points.
+      speaker: <a href="">TBD</a>
+      topic: TBD
+      abstract: TBD
       icon: lightbulb-o
       start: "16:00"
       end: "16:30"
@@ -125,25 +125,25 @@ tracks:
       end: "17:00"
 
     - type: talk
-      speaker: <a href="http://www.ramonvoges.de/">Ramon Voges</a>
-      topic: Neovim – The Historian's Best Friend
-      abstract: Historians write a lot of text. A helpful and supportive editor is crucial for their day to day work. In this talk I will introduce some of neo/vim's features and plugins I find most useful while dealing with text. Apart from several vim commands and settings, I will go into detail especially with regard to editing LaTeX and markdown files as well as using git.
+      speaker: <a href="">TBD</a>
+      topic: TBD
+      abstract: TBD
       icon: lightbulb-o
       start: "17:10"
       end: "17:40"
 
     - type: talk
-      speaker: <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
-      topic: Python unit testing
-      abstract: How to add unit test to your Neovim Python plugin and executing them via <a href="https://github.com/janko-m/vim-test">vim-test</a><br> inside Neovim.
+      speaker: <a href="">TBD</a>
+      topic: TBD
+      abstract: TBD
       icon: lightbulb-o
       start: "17:45"
       end: "18:00"
 
     - type: talk
-      speaker: <a href="https://github.com/WolfgangMehner">Wolfgang Mehner</a>
-      topic: Vim Mapathon - An advanced introduction to maps
-      abstract: With a bit of effort and a few recurring tricks you can match or even improve upon the comfort the command-line completion your shell offers.
+      speaker: <a href="">TBD</a>
+      topic: TBD
+      abstract: TBD
       icon: lightbulb-o
       start: "18:10"
       end: "19:00"
