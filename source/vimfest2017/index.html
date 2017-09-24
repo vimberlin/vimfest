@@ -1,0 +1,733 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+      <meta name="description" content="Vimfest Berlin is the community-driven Vim &quot;Hackathon&quot; in Berlin, organized by the Vim Berlin user group and Vim enthusiasts from other cities." />
+      <meta name="keywords" content="vim vimfest vimberlin" />
+
+    <title>Vimfest 2017, 22 - 24 September</title>
+
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+      <link href="//unpkg.com/leaflet@1.1.0/dist/leaflet.css" rel="stylesheet" />
+    <link href="/public/css/main.css" rel="stylesheet" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+  </head>
+
+  <body class="index" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="block" id="home">
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="/">
+              <img class="img-responsive" style="display: block; text-align: center; margin-left: auto; margin-right: auto;" src="/public/images/vimfest.png" alt="Vimfest Berlin is the community-driven Vim &quot;Hackathon&quot; in Berlin, organized by the Vim Berlin user group and Vim enthusiasts from other cities.">
+            </a>
+          </li>
+          <li><a href="#location" title="">Location</a></li>
+          <li><a href="#agenda" title="">Agenda</a></li>
+          <li><a href="#speakers" title="">Speakers</a></li>
+      <li>
+        <a href="/news">
+          Blog
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://gitter.im/vimberlin/vimfest">
+          Chat
+        </a>
+      </li>
+      <li>
+        <a  target="_blank" href="http://eepurl.com/ccZWOL">
+          Newsletter
+        </a>
+      </li>
+      <!--
+        <li>
+        <a target="_blank" href="https://events.titanpad.com/2017-vimfest">
+        Titanpad
+        </a>
+        </li>
+      -->
+      <li>
+        <a target="_blank" href="http://twitter.com/vim_fest">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.youtube.com/channel/UCgw9Rc36PWfT4OWy7FyGR_w">
+          <i class="fa fa-youtube"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://plus.google.com/108124592783098589870">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.facebook.com/vimfestberlin">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="/feed.xml">
+          <i class="fa fa-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:vimfestberlin@gmail.com?subject= Vimfest">
+          <i class="fa fa-envelope"></i>
+        </a>
+      </li>
+      <!--
+      <li>
+        <a target="_blank" href="/vimfest2016">
+          Vimfest 2016
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="/recap-vimfest-2016">
+          Recap Vimfest 2016
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="http://vimberlin.de/vimfest-october-2015">
+          Vimfest 2015
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="/recap-vimfest-2015">
+          Recap Vimfest 2015
+        </a>
+      </li>
+      -->
+      </ul>
+      </div>
+    </div>
+</nav>
+<div class="navbar-placeholder"></div>
+
+
+    <header id="home">
+  <div class="jumbotron">
+  <div class="container">
+    <h1 style="display: block; text-align: center; margin-left: auto; margin-right: auto;">Vimfest 2017, 22 - 24 September</h1>
+    <p>
+    Vimfest 2017 is the third community-driven <a href="http://www.vim.org/">Vim</a> "<a href="http://en.wikipedia.org/wiki/Hackathon">Hackathon</a>",
+    happening the weekend of <strong>22 &ndash; 24 September</strong> in Berlin, organized by the <a href="http://vimberlin.de/">Vim Berlin user group</a>
+    and Vim enthusiasts from other cities.</p>
+
+    <br>
+
+    <h2>The call for speakers is closed now</h2>
+
+    <p>You can check the talks under <a href="https://github.com/vimberlin/vimfest/issues/3">GitHub</a>.</p>
+    <br>
+
+    <h2>Not convinced?</h2>
+
+    <p>Please checkout our previous events: <a href="/recap-vimfest-2016" alt="Recap Vimfest 2016">Vimfest 2016</a> and <a href="/recap-vimfest-2015" alt="Recap Vimfest 2015">Vimfest 2015</a>.
+    </p>
+    <br>
+
+    <p>
+    <a title="Sven Guckes" href="http://www.guckes.net/">Sven Guckes</a>, <a title="Tim Quellmalz" href="https://github.com/tqmz">Tim Quellmalz</a>, and <a title="Matthias Günther" href="http://wikimatze.de/about">Matthias Günther</a>.
+    </p>
+    <br>
+
+    <h2>Contact us</h2>
+
+    <a class="link-connect" href="http://twitter.com/vim_fest">
+      <i class="fa fa-twitter-square connect twitter-connect"></i>
+    </a>
+
+    <a class="link-connect" href="https://www.youtube.com/channel/UCgw9Rc36PWfT4OWy7FyGR_w">
+      <i class="fa fa-youtube-square connect youtube-connect"></i>
+    </a>
+
+    <a class="link-connect" href="https://plus.google.com/108124592783098589870">
+      <i class="fa fa-google-plus-square connect google-plus-connect"></i>
+    </a>
+
+    <a class="link-connect" href="https://www.facebook.com/vimfestberlin">
+      <i class="fa fa-facebook-square connect facebook-connect"></i>
+    </a>
+    <br>
+    <br>
+
+    <ul>
+      <li>Mail: <a href="mailto:vimfestberlin@gmail.com?subject= Vimfest">mailto:vimfestberlin@gmail.com?subject= Vimfest</a></li>
+      <li>Mailling list: <a href="https://groups.google.com/group/vimberlin/#">https://groups.google.com/group/vimberlin/#</a></li>
+      <li>Contact Address: Matthias Günther, Alboinstraße 37, 12103 Berlin</li>
+    </ul>
+    <br>
+
+    <!--
+      <p>We will spend the whole weekend on topics around the popular editor, such as:
+      efficient ways of writing with Vim. Setting up <code>.vimrc</code>. Using plugins that
+      rock, and writing plugins that rock. And also: other useful tools with vim
+      keybindings, like <code>mutt</code> or <code>newsbeuter</code>. What ever you're interested in:
+      Vimfest Berlin is an open space, everything is up to you!</p>
+
+      <p>So don't hesitate, and save the date: <strong>16 &ndash; 18 September</strong> in Berlin: Be with us
+      and join the very second Vimfest. <a href="http://doodle.com/poll/ade8e834xxti7w6n">Register now</a> &ndash; try, learn and talk about the editor we all
+      love.</p>
+
+      <p>Ain't enough? Wait, there's more.</p>
+
+      <p>Berlin is a great place that has a lot to offer. Once having many Vim lovers
+      and interested people united at one place, we'll use the opportunity and,
+      guided by our locals, go find some of the most interesting buffers of Berlin
+      and celebrate Vim a bit at Saturday night.</p>
+    -->
+  </div>
+</div>
+
+</header>
+
+
+<!--
+<div class="container">
+  <h2>Latest News</h2>
+    <article>
+      <h3>
+        <a href="/news/2017-09-20-vim-mapathon-an-advanced-introduction-to-maps-index.html">Vim Mapathon - An advanced introduction to maps</a>
+      </h3>
+      <time datetime="17-20-09" pubdate="">Posted on September 20, 2017</time>
+      <br>
+      <br>
+
+      <div class="row">
+  <div class="col-md-3">
+    <img class="img-responsive" src="https://avatars1.githubusercontent.com/u/2720024?v=4&amp;s=460" />
+  </div>
+  <div class="col-md-9">
+    <strong>
+      Wolfgang Mehner
+    </strong>
+    <p>
+    I will highlight some of the more advanced uses of maps:
+
+    <ul>
+      <li>Extending maps with expressions and VimScript</li>
+      <li>Maps for the Vim command-line</li>
+      <li>A short digression on custom completion for ex-commands (using <code>tab</code>) [*]</li>
+      <li>Custom completion on the command-line using maps (e.g. <code>CTRL+P</code> style completion)</li>
+      <li>Putting it all together to make your plug-ins (in lack of a better word) sparkle [*]</li>
+    </ul>
+
+    With a bit of effort and a few recurring tricks you can match or even improve upon the comfort the command-line completion your shell offers. Authors of plug-ins will hopefully find some interesting suggestions, but normal users of Vim can improve their workflow as well.
+    </p>
+
+    <span><a href="https://github.com/WolfgangMehner"><i class="speaker-social-icons fa fa-github"></i></a></span>
+  </div>
+</div>
+
+
+
+      <br>
+      <a href="/news">More news</a>
+    </article>
+</div>
+-->
+<div id="location" class="block">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+      <div class="col-xs-12">
+        <div class="page-header">
+          <h1>
+            Location
+          </h1>
+        </div>
+          <div class="row">
+  <div class="col-md-12">
+    <p>
+    We are happy to announce <a href="http://www.buero20.org">Büro 2.0</a> as the host for Vimfest 2017.
+    </p>
+
+    <p>
+      Here is the exact location of the place:
+    <br>
+      <pre>
+  Büro 2.0
+  Weigandufer 45,
+  12059 Berlin (Neukölln)
+      </pre>
+    </p>
+    Take the nearest sbahn and bus stop:
+    <br>
+    <br>
+
+    <a href="http://www.osm.org/node/3515302617">S41+S42 "Sonnenallee"</a>
+    <br>
+    <a href="http://www.osm.org/node/386576905">Bus 171 "Treptower Bücke"</a>
+
+    <br>
+
+    <br>
+    <div id="mapid"></div>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div id="agenda" class="block">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+      <div class="col-xs-12">
+        <div class="page-header">
+          <h1>
+            Agenda
+          </h1>
+        </div>
+          <div class="row">
+  <div class="col-md-4 col-xs-12" >
+    <h3>Friday, 22 September <br>(Getting to know each other) <small></small></h3>
+    <article class="panel">
+          <h4>
+              <i class="fa fa-users"></i>
+            Hacking
+          </h4>
+          <time>17:00 - 20:00</time>
+        <p>
+          <p>Work on your personal <strong>projects</strong>, talk to others, explain your workflow …</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-cutlery"></i>
+          Dinner + Drinks
+        </h4>
+          <time>20:00 - </time>
+    </article>
+  </div>
+  <div class="col-md-4 col-xs-12" >
+    <h3>Saturday, 23 September <br>(Talks, Tools, Questions) <small></small></h3>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-barcode"></i>
+          Boarding
+        </h4>
+          <time>10:00 - 10:10</time>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-lightbulb-o"></i>
+          Writing NeoVim Plugins using Python Plugin
+        </h4>
+        <h5>
+          <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
+        </h5>
+          <time>10:20 - 10:50</time>
+        <p>
+          <p>I've written my first NeoVim plugin using the new Plugin API and Python 3, see <a href="https://github.com/neovim/python-client" alt="Python 3 client for Neovim Plugin API">python-client</a>. I will introduce how to write plugins using the new API.</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-lightbulb-o"></i>
+          The quest for PHP Intellisense in VIM
+        </h4>
+        <h5>
+          <a href="https://dantleech.com" >Dan Leech</a>
+        </h5>
+          <time>11:00 - 11:30</time>
+        <p>
+          <p>Viable PHP Intellisense (autocompletion, introspection) in VIM has long been sought after, but it may finally be here.</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-paper-plane"></i>
+          VIM for PHP developers. The best editor with all IDE features.
+        </h4>
+        <h5>
+          <a href="https://www.artansoft.com/">Raül Torralba Adsuara</a>
+        </h5>
+          <time>11:40 - 12:40</time>
+        <p>
+          <p>Everybody knows that VIM is the best and fastest text editor, but some PHP developers change it for other IDEs like PHPStorm, Netbeans…</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-cutlery"></i>
+          Lunch
+        </h4>
+          <time>12:40 - 13:40</time>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-paper-plane"></i>
+          My theory of VIM the IDE
+        </h4>
+        <h5>
+          <a href="https://www.asktherelic.com/" alt="Matthew Behrens">Matthew Behrens</a>
+        </h5>
+          <time>13:45 - 14:30</time>
+        <p>
+          <p>I would like to highlight the abilities that I have assembled, to make Vim a good IDE for any language. These abilities involve easy file searching, grepping, syntax highlighting, and formatting of code to start.</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-paper-plane"></i>
+          Neovim 0.2 features and future
+        </h4>
+        <h5>
+          <a href="https://twitter.com/justinmk" >Justin M. Keyes</a>
+        </h5>
+          <time>14:45 - 15:45</time>
+        <p>
+          <p>Whats new in Neovim 0.2 and what will be the future of the project</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-lightbulb-o"></i>
+          Head first with vim specific helpfile
+        </h4>
+        <h5>
+          <a href="http://blog.jaysinh.com/" >Jaysinh Shukla</a>
+        </h5>
+          <time>16:00 - 16:30</time>
+        <p>
+          <p>This talk will provide initial guidelines on writing vim helpfiles. User documentation is one of the important aspects of any software. Because vim has a great functionality of dealing helpfile inside the editor, it is very important to write helpfile accessible inside vim editor and not anywhere else.  Ideally, the talk will cover below points.</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-pause"></i>
+          Break
+        </h4>
+          <time>16:30 - 17:00</time>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-lightbulb-o"></i>
+          Neovim – The Historian's Best Friend
+        </h4>
+        <h5>
+          <a href="http://www.ramonvoges.de/">Ramon Voges</a>
+        </h5>
+          <time>17:10 - 17:40</time>
+        <p>
+          <p>Historians write a lot of text. A helpful and supportive editor is crucial for their day to day work. In this talk I will introduce some of neo/vim's features and plugins I find most useful while dealing with text. Apart from several vim commands and settings, I will go into detail especially with regard to editing LaTeX and markdown files as well as using git.</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-lightbulb-o"></i>
+          Python unit testing
+        </h4>
+        <h5>
+          <a href="https://daniel-siepmann.de/">Daniel Siepmann</a>
+        </h5>
+          <time>17:45 - 18:00</time>
+        <p>
+          <p>How to add unit test to your Neovim Python plugin and executing them via <a href="https://github.com/janko-m/vim-test">vim-test</a><br /> inside Neovim.</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-lightbulb-o"></i>
+          Vim Mapathon - An advanced introduction to maps
+        </h4>
+        <h5>
+          <a href="https://github.com/WolfgangMehner">Wolfgang Mehner</a>
+        </h5>
+          <time>18:10 - 19:00</time>
+        <p>
+          <p>With a bit of effort and a few recurring tricks you can match or even improve upon the comfort the command-line completion your shell offers.</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-lightbulb-o"></i>
+          QA session
+        </h4>
+        <h5>
+          TBA
+        </h5>
+          <time>19:00 - 20:00</time>
+        <p>
+          <p>People can jump in, explain something, just talk</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-cutlery"></i>
+          Dinner + Drinks
+        </h4>
+          <time>20:00 - </time>
+    </article>
+  </div>
+  <div class="col-md-4 col-xs-12" >
+    <h3>Sunday, 24 September <br>(Hacking, Lessons learned, Planning Vimfest 2018) <small></small></h3>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-barcode"></i>
+          Boarding
+        </h4>
+          <time>10:00 - 10:10</time>
+    </article>
+    <article class="panel">
+          <h4>
+              <i class="fa fa-users"></i>
+            Hacking
+          </h4>
+          <time>10:10 - 13:00</time>
+        <p>
+          <p>Work on your personal <strong>projects</strong>, talk to others, explain your workflow …</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-cutlery"></i>
+          Lunch
+        </h4>
+          <time>13:00 - 14:30</time>
+    </article>
+    <article class="panel">
+          <h4>
+              <i class="fa fa-users"></i>
+            Hacking
+          </h4>
+          <time>14:30 - 17:00</time>
+        <p>
+          <p>Work on your personal <strong>projects</strong>, talk to others, explain your workflow …</p>
+
+        </p>
+    </article>
+    <article class="panel">
+        <h4>
+            <i class="fa fa-paper-plane"></i>
+          TBA
+        </h4>
+        <h5>
+          Closing speech - <a href="http://wikimatze.de">Matthias Günther</a>
+        </h5>
+          <time>17:00 - 17:30</time>
+        <p>
+          <p>Vimfest ends</p>
+
+        </p>
+    </article>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div id="speakers" class="block">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+      <div class="col-xs-12">
+        <div class="page-header">
+          <h1>
+            Speakers
+          </h1>
+        </div>
+            <div class="row">
+    <div class="col-md-12 col-xs-12" >
+      <div class="col-md-3 col-xs-12">
+        <h4>
+        <a href="https://dantleech.com">Daniel Leech</a><br>
+        </h4>
+          <img class="speaker-image" src="https://pbs.twimg.com/profile_images/731089522818224128/r7cGoKnL_400x400.jpg" />
+        <h5>Code monkey <a href="https://twitter.com/Inviqa">@Inviqa</a>. Erstwhile cyclotourist <a href="https://twitter.com/phpbench">@phpbench</a> <a href="https://twitter.com/biketourdan">@biketourdan</a></h5>
+          <span><a href="https://twitter.com/dantleech"><i class="speaker-social-icons fa fa-twitter"></i></a></span>
+          <span><a href="https://github.com/dantleech"><i class="speaker-social-icons fa fa-github"></i></a></span>
+        <br>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <h4>
+        <a href="https://daniel-siepmann.de/">Daniel Siepmann</a><br>
+        </h4>
+          <img class="speaker-image" src="https://pbs.twimg.com/profile_images/671816252743118848/feffEHgN_400x400.jpg" />
+        <h5>Idealist, Vim, zsh, tmux, Debugger, Backend Developer, TYPO3</h5>
+          <span><a href="https://twitter.com/layneobserdia"><i class="speaker-social-icons fa fa-twitter"></i></a></span>
+          <span><a href="https://github.com/DanielSiepmann"><i class="speaker-social-icons fa fa-github"></i></a></span>
+        <br>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <h4>
+        <a href="http://blog.jaysinh.com/">Jaysinh Shukla</a><br>
+        </h4>
+          <img class="speaker-image" src="http://roaming-initiative.com/mediagoblin/mgoblin_media/media_entries/2324/my_profile_picture.jpg" />
+        <h5>Full-stack developer by profession, Computer scientist by heart, Actor by gene. [Speak, Vimm, Organiz]er. Core member of PyKutch.</h5>
+          <span><a href="https://twitter.com/jaysinhp"><i class="speaker-social-icons fa fa-twitter"></i></a></span>
+          <span><a href="https://github.com/ultimatecoder"><i class="speaker-social-icons fa fa-github"></i></a></span>
+        <br>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <h4>
+        <a href="https://justinmk.github.io/">Justin M. Keyes</a><br>
+        </h4>
+          <img class="speaker-image" src="https://pbs.twimg.com/profile_images/549278976711983104/M9CLpGgx_400x400.jpeg" />
+        <h5>Neovim maintainer, Vim contributor, software engineer</h5>
+          <span><a href="https://twitter.com/justinmk"><i class="speaker-social-icons fa fa-twitter"></i></a></span>
+          <span><a href="https://github.com/justinmk"><i class="speaker-social-icons fa fa-github"></i></a></span>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-xs-12" >
+      <div class="col-md-3 col-xs-12">
+        <h4>
+        <a href="https://www.asktherelic.com/">Matt Behrens</a><br>
+        </h4>
+          <img class="speaker-image" src="https://pbs.twimg.com/profile_images/1772443295/photo_400x400.jpeg" />
+        <h5>Software engineer and traveler.</h5>
+          <span><a href="https://twitter.com/askedrelic"><i class="speaker-social-icons fa fa-twitter"></i></a></span>
+          <span><a href="https://github.com/askedrelic"><i class="speaker-social-icons fa fa-github"></i></a></span>
+        <br>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <h4>
+        <a href="https://www.artansoft.com/">Raül Torralba Adsuara</a><br>
+        </h4>
+          <img class="speaker-image" src="https://pbs.twimg.com/profile_images/2780645423/944099dd86cf788f5b8fc9d45e008166_400x400.png" />
+        <h5>artansoft's blogger. Software developer, organizer at betabeersCAS and vim lover</h5>
+          <span><a href="https://twitter.com/raul_torralba"><i class="speaker-social-icons fa fa-twitter"></i></a></span>
+          <span><a href="https://github.com/rtorralba"><i class="speaker-social-icons fa fa-github"></i></a></span>
+        <br>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <h4>
+        <a href="http://www.ramonvoges.de/">Ramon Voges</a><br>
+        </h4>
+          <img class="speaker-image" src="https://pbs.twimg.com/profile_images/844114447845249029/Cz8LYhBf_400x400.jpg" />
+        <h5>Historiker und Rubyist</h5>
+          <span><a href="https://twitter.com/ramon_voges"><i class="speaker-social-icons fa fa-twitter"></i></a></span>
+          <span><a href="https://github.com/ramonvoges"><i class="speaker-social-icons fa fa-github"></i></a></span>
+        <br>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <h4>
+        <a href="https://github.com/WolfgangMehner">Wolfgang Mehner</a><br>
+        </h4>
+          <img class="speaker-image" src="https://avatars1.githubusercontent.com/u/2720024?v=4&s=460" />
+        <h5></h5>
+          <span><a href="https://github.com/WolfgangMehner"><i class="speaker-social-icons fa fa-github"></i></a></span>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
+  </body>
+
+  <script>
+  var mymap = L.map('mapid').setView([52.47928, 13.45381], 13);
+
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    maxZoom: 17,
+    id: 'mapbox.streets'
+  }).addTo(mymap);
+
+  var vimfestIcon = L.icon({
+    iconUrl: 'https://c1.staticflickr.com/5/4048/35700005035_c9eb7685b6_s.jpg',
+    shadowSize:   [50, 64], // size of the shadow
+  });
+
+  L.marker([52.47928, 13.45381], {icon: vimfestIcon}).addTo(mymap)
+  .bindPopup("<b>Vimfest 2017!</b><br />Büro 2.0, Weigandufer 45, 12059 Berlin").openPopup();
+
+  L.circle([51.508, -0.11], 500, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5
+  }).addTo(mymap).bindPopup("I am a circle.");
+
+
+
+  var popup = L.popup();
+
+  function onMapClick(e) {
+    popup
+      .setLatLng(e.latlng)
+      .setContent("You clicked the map at " + e.latlng.toString())
+      .openOn(mymap);
+  }
+
+  mymap.on('click', onMapClick);
+</script>
+
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//vimfest.org/piwik/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 1]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+
+    // hide the navigation when it's clicked http://stackoverflow.com/a/19385791
+    $(function() {
+        $('.nav a').on('click', function(){
+            if($('.navbar-toggle').css('display') !='none'){
+                $(".navbar-toggle").trigger( "click" );
+            }
+        });
+    });
+
+  </script>
+  <noscript><p><img src="//vimfest.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
+</html>
