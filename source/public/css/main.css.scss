@@ -15,18 +15,39 @@
   text-decoration: none;
 }
 
+.youtube-connect {
+  color: #bb0000;
+}
+.youtube-connect:hover {
+  color: #8f0909;
+}
+
+.vimeo-connect {
+  color: #337ab7;
+}
+.vimeo-connect:hover {
+  color: #0d4f88;
+}
+
 .twitter-connect {
   color: #55acee;
-  text-decoration: none;
 }
-.facebook-connect {
-  color: #3b5998;
+.twitter-connect:hover {
+  color: #167dcd;
 }
+
 .google-plus-connect {
   color: #d34836;
 }
-.youtube-connect {
-  color: #bb0000;
+.google-plus-connect:hover {
+  color: #b53b2b;
+}
+
+.facebook-connect {
+  color: #3b5998;
+}
+.facebook-connect:hover {
+  color: #3564c3;
 }
 
 .speaker-social-icons {
