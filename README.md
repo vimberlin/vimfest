@@ -2,20 +2,20 @@
 
 [![Join the chat at https://gitter.im/vimberlin/vimfest](https://badges.gitter.im/vimberlin/vimfest.svg)](https://gitter.im/vimberlin/vimfest?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Vimfest is a yearly, community-driven [Vim](http://www.vim.org] [Hackathon](http://en.wikipedia.org/wiki/Hackathon) in Berlin organized by the [Vim Berlin user group](https://vimberlin.de/) and Vim enthusiasts from other cities all around the world.
+Vimfest is a yearly, community-driven [Vim](http://www.vim.org) [Hackathon](http://en.wikipedia.org/wiki/Hackathon) in Berlin organized by the [Vim Berlin user group](https://vimberlin.de/) and Vim enthusiasts from other cities all around the world.
 
 
 ## Previous editions of vimfest
 
 <ul>
   <li>
-   <a href="/vimfest2017" alt="Vimfest 2017">Vimfest 2017</a> (<a href="/recap-vimfest-2017" alt="Recap Vimfest 2017">recap</a>)
+   <a href="https://vimfest.org/vimfest2017" alt="Vimfest 2017">Vimfest 2017</a> (<a href="/recap-vimfest-2017" alt="Recap Vimfest 2017">recap</a>)
   </li>
   <li>
-   <a href="/vimfest2016" alt="Vimfest 2016">Vimfest 2016</a> (<a href="/recap-vimfest-2016" alt="Recap Vimfest 2016">recap</a>)
+   <a href="https://vimfest.org/vimfest2016" alt="Vimfest 2016">Vimfest 2016</a> (<a href="https://vimfest.org/recap-vimfest-2016" alt="Recap Vimfest 2016">recap</a>)
   </li>
   <li>
-   <a href="/recap-vimfest-2015" alt="Recap Vimfest 2015">Recap Vimfest 2015</a>
+   <a href="https://vimfest.org/recap-vimfest-2015" alt="Recap Vimfest 2015">Recap Vimfest 2015</a>
   </li>
 </ul>
 
