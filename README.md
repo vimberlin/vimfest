@@ -9,7 +9,7 @@ Vimfest is a yearly, community-driven [Vim](http://www.vim.org) [Hackathon](http
 
 <ul>
   <li>
-   <a href="https://vimfest.org/vimfest2017" alt="Vimfest 2017">Vimfest 2017</a> (<a href="/recap-vimfest-2017" alt="Recap Vimfest 2017">recap</a>)
+   <a href="https://vimfest.org/vimfest2017" alt="Vimfest 2017">Vimfest 2017</a> (<a href="https://vimfest.org/recap-vimfest-2017" alt="Recap Vimfest 2017">recap</a>)
   </li>
   <li>
    <a href="https://vimfest.org/vimfest2016" alt="Vimfest 2016">Vimfest 2016</a> (<a href="https://vimfest.org/recap-vimfest-2016" alt="Recap Vimfest 2016">recap</a>)
