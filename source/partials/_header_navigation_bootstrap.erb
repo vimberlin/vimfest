@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light rounded fixed-top">
+  <div class="container">  <a href="/">
+      <img class="img-responsive" style="display: block; text-align: center; margin-left: auto; margin-right: auto;" src="/public/images/vimfest.png" alt="Vimfest Berlin is the community-driven Vim &quot;Hackathon&quot; in Berlin, organized by the Vim Berlin user group and Vim enthusiasts from other cities.">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample09">
+      <ul class="navbar-nav mr-auto">
+        <% data.pages.each do |page| %>
+          <%
+              title = page.keys[0]
+          subtext = page[title]
+        %>
+      <% if title.include?("Recap") %>
+        <li class="hidden-xs"><a href="#<%= title.to_url %>" title="<%= subtext %>"><%= title %></a></li>
+      <% else %>
+        <li><a href="#<%= title.to_url %>" title="<%= subtext %>"><%= title %></a></li>
+      <% end %>
+      <div class="container">
+      <% end %>
+      <li class="nav-item">
+        <a class="nav-link" href="/news">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://gitter.im/vimberlin/vimfest">Chat</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://eepurl.com/ccZWOL">Newsletter</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"href="http://twitter.com/<%= data.global.social.twitter %>">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.youtube.com/channel/UCgw9Rc36PWfT4OWy7FyGR_w">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://plus.google.com/<%= data.global.social.google_plus %>">
+          <i class="fab fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/<%= data.global.social.facebook %>">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<%= data.global.social.rss %>">
+          <i class="fas fa-rss"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:<%= data.global.contact.mail %>?subject=<%= data.global.contact.title %> Vimfest">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://vimeo.com/<%= data.global.social.vimeo %>">
+          <i class="fab fa-vimeo-v"></i>
+        </a>
+      </li>
+      </ul>
+      </div>
+    </div>
+</nav>
+
