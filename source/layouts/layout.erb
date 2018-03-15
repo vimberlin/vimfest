@@ -20,9 +20,7 @@
   </head>
 
   <body class="<%= page_classes %>" data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div class="container">
-      <%= partial "partials/header_navigation_bootstrap" %>
-    </div>
+    <%= partial "partials/header_navigation" %>
 
     <%= yield %>
     <% data.styles.scripts.each do |script| %>

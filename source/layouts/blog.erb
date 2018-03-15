@@ -24,12 +24,12 @@
 
     <div class="container">
       <br>
+      <br>
+      <br>
       <h1><%= current_article.title %></h1>
       <br>
       <%= yield %>
     </div>
-
-    <%= partial "partials/footer" %>
 
     <% data.styles.scripts.each do |script| %>
     <%= javascript_include_tag script %>
@@ -38,19 +38,27 @@
 
   <!-- Piwik -->
   <script type="text/javascript">
-var _paq = _paq || [];
-_paq.push(['trackPageView']);
-_paq.push(['enableLinkTracking']);
-(function() {
-  var u="//vimfest.org/piwik/";
-  _paq.push(['setTrackerUrl', u+'piwik.php']);
-  _paq.push(['setSiteId', 1]);
-  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-})();
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//vimfest.org/piwik/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 1]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+
+    // hide the navigation when it's clicked http://stackoverflow.com/a/19385791
+    $(function() {
+        $('.nav a').on('click', function(){
+            if($('.navbar-toggle').css('display') !='none'){
+                $(".navbar-toggle").trigger( "click" );
+            }
+        });
+    });
+
   </script>
   <noscript><p><img src="//vimfest.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Piwik Code -->
 </html>
-
-
