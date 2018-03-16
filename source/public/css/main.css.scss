@@ -76,6 +76,28 @@
   position:absolute;
 }
 
+a.nav-link {
+  padding: 10px 15px !important;
+}
+
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.bg-light {
+  border-bottom: 2px solid #e7e7e7 !important;
+  border-width: 0 0 2px !important;
+}
+
+
 @import "bourbon";
 @import "variables";
 @import "mixins";

@@ -1,24 +1,25 @@
 ---
-title: News
+title: News about Vimfest
 ---
 <div class="container">
-  <div class="col-md-12">
-    <h2>News</h2>
-    <% blog.articles.each do |article, i| %>
-      <article>
-        <h3>
-          <a href="<%= article.url %>"><%= article.title %></a>
-        </h3>
-        <time datetime="<%= article.date.strftime('%y-%d-%m')%>" pubdate="">Posted on <%= article.date.strftime('%B %e, %Y')%></time>
-        <br>
-        <br>
+  <br>
+  <br>
+  <br>
+  <h1>News</h1>
+  <% blog.articles.each do |article, i| %>
+    <article>
+      <h3>
+        <a href="<%= article.url %>"><%= article.title %></a>
+      </h3>
+      <time datetime="<%= article.date.strftime('%y-%d-%m')%>" pubdate="">Posted on <%= article.date.strftime('%B %e, %Y')%></time>
+      <br>
+      <br>
 
-        <%= article.body %>
-      </article>
-      <br>
-      <hr>
-      <br>
-    <% end %>
-  </div>
+      <%= article.body %>
+    </article>
+    <br>
+    <hr>
+    <br>
+  <% end %>
 </div>
 

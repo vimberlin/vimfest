@@ -19,6 +19,14 @@ helpers do
   def markdown(data)
     Tilt::KramdownTemplate.new { data }.render
   end
+
+  def speaker_twitter(name)
+    "<a href=\"https://twitter.com/#{name}\"><i class=\"speaker-social-icons fab fa-twitter\"></i></a>"
+  end
+
+  def speaker_github(name)
+    "<a href=\"https://github.com/#{name}\"><i class=\"speaker-social-icons fab fa-github\"></i></a>"
+  end
 end
 
 # Middleman Plugins
